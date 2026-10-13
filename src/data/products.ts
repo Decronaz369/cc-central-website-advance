@@ -74,7 +74,7 @@ export const durianProducts: DurianProduct[] = [
     id: "montong-parigi",
     name: "Montong Palu Parigi",
     desc: "Legenda dari Parigi Moutong: daging tebal, legit tanpa pahit, favorit dari penikmat pemula sampai kolektor.",
-    image: "/images/monthong-parigi.png",
+    image: "/images/monthong-parigi2.png",
     category: "Buah Utuh",
     priceLabel: "Ditimbang Utuh",
     priceNote: "harga harian per kg",
