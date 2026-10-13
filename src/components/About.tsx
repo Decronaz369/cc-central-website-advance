@@ -14,7 +14,7 @@ export default function About() {
             <img
               src="/images/about-store.png"
               alt="Suasana butik buah DC Central"
-              className="relative z-10 h-[420px] w-[86%] rounded-[2.5rem] object-cover shadow-soft sm:h-[500px]"
+              className="relative z-10 h-[420px] w-[86%] rounded-[2.5rem] object-cover shadow-soft sm:h-[500px] object-[100%_50%]"
               loading="lazy"
             />
             <img
@@ -57,12 +57,16 @@ export default function About() {
           />
           <Reveal delay={0.2}>
             <p className="mt-6 text-base leading-relaxed text-leaf-900/70">
-              <span className="font-bold text-leaf-950">DC Central</span>,
-              bersama{" "}
-              <span className="font-bold text-leaf-950">@duriancastle.id</span>,
-              adalah toko buah segar berkualitas di kawasan Citra Raya,
-              Tangerang. Kami percaya buah terbaik lahir dari kurasi yang teliti
-              — setiap mangga, anggur, hingga durian premium kami pilih satu per
+              <span className="font-bold text-leaf-950">DC Central</span> adalah
+              toko buah segar berkualitas di kawasan Citra Raya, Tangerang, yang
+              dikelola oleh{" "}
+              <span className="font-bold text-leaf-950">
+                PT. Central Buah Segar
+              </span>{" "}
+              — distributor buah lokal dan impor — bersama{" "}
+              <span className="font-bold text-leaf-950">@duriancastle.id</span>.
+              Kami percaya buah terbaik lahir dari kurasi yang teliti — setiap
+              mangga, melon, anggur, hingga durian premium kami pilih satu per
               satu setiap pagi.
             </p>
             <p className="mt-4 text-base leading-relaxed text-leaf-900/70">

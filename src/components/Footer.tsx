@@ -44,7 +44,11 @@ export default function Footer() {
             </div>
             <p className="mt-6 max-w-sm text-sm leading-relaxed text-cream-100/60">
               Toko buah segar, buah impor, dan spesialis durian premium di Citra
-              Raya, Tangerang. {BRAND.tagline}.
+              Raya, Tangerang. {BRAND.tagline}.{" "}
+              <span className="font-semibold text-cream-100/80">
+                PT. Central Buah Segar
+              </span>{" "}
+              — Distributor Buah Lokal & Impor.
             </p>
             <div className="mt-7 flex gap-3">
               <a
@@ -164,8 +168,8 @@ export default function Footer() {
         {/* bottom bar */}
         <div className="mt-8 flex flex-wrap items-center justify-between gap-4 border-t border-white/10 pt-7">
           <p className="text-xs text-cream-100/45">
-            © {new Date().getFullYear()} DC Central · Bagian dari {BRAND.parent}
-            . Seluruh hak cipta dilindungi.
+            © {new Date().getFullYear()} PT. Central Buah Segar (DC Central) ·
+            Bagian dari {BRAND.parent}. Seluruh hak cipta dilindungi.
           </p>
           <div className="flex items-center gap-5">
             <p className="text-xs font-semibold text-gold-300/70">

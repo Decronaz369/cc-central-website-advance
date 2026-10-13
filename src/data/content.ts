@@ -29,6 +29,7 @@ export const marqueeItems = [
   "Free Ongkir Citra Raya",
   "Garansi Durian 100%",
   "Buah Impor Pilihan",
+  "Distributor Buah Lokal & Impor",
   "Buka 09.00–22.00 WIB",
   "WhatsApp Aktif 24 Jam",
 ];
@@ -82,7 +83,7 @@ export const categories: Category[] = [
   {
     icon: Plane,
     title: "Buah Impor",
-    desc: "Anggur, pear, strawberry & jeruk impor kualitas ekspor.",
+    desc: "Lengkeng, anggur, apel & jeruk impor kualitas ekspor.",
     target: "#katalog",
     gradient: "from-sky-200 via-sky-100 to-cream-100",
     iconColor: "text-sky-700",
@@ -90,7 +91,7 @@ export const categories: Category[] = [
   {
     icon: Citrus,
     title: "Buah Lokal Segar",
-    desc: "Mangga, alpukat & buah naga pilihan petani terbaik.",
+    desc: "Mangga, melon, semangka, nanas, salak & manggis pilihan.",
     target: "#katalog",
     gradient: "from-leaf-200 via-leaf-100 to-cream-100",
     iconColor: "text-leaf-700",
@@ -274,7 +275,7 @@ export const testimonials: Testimonial[] = [
   {
     name: "Andre Wijaya",
     area: "Citra Raya",
-    product: "Anggur & Pear",
+    product: "Anggur & Apel",
     quote:
       "Toko buah paling rapi di area sini. Ditimbang di depan kita, harganya jujur. Anak saya suka banget anggurnya.",
     rating: 5,
@@ -305,7 +306,7 @@ export interface Faq {
 export const faqs: Faq[] = [
   {
     q: "Bagaimana cara pesan online?",
-    a: "Cukup chat WhatsApp kami di 0851-5096-2310, kirim daftar pesanan Anda. Tim kami akan balas dengan info stok & harga terbaru, lalu pesanan ditimbang dan siap diantar atau diambil di toko. WhatsApp kami aktif 24 jam.",
+    a: "Cukup chat WhatsApp kami di 0822-5327-6700, kirim daftar pesanan Anda. Tim kami akan balas dengan info stok & harga terbaru, lalu pesanan ditimbang dan siap diantar atau diambil di toko. WhatsApp kami aktif 24 jam.",
   },
   {
     q: "Apakah durian benar-benar bergaransi 100%?",

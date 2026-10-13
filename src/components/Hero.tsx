@@ -1,4 +1,3 @@
-import { Suspense, lazy } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import {
   Leaf,
@@ -11,8 +10,7 @@ import {
 import { waLink } from "../data/site";
 import { scrollToId } from "../lib/scroll";
 import { EASE } from "./ui/primitives";
-
-const DurianScene = lazy(() => import("./three/DurianScene"));
+import DurianHero from "./DurianHero";
 
 const line = {
   hidden: { y: "112%" },
@@ -244,9 +242,7 @@ export default function Hero() {
             <div className="absolute inset-6 animate-spin-slower rounded-full border border-dashed border-gold-400/45" />
             <div className="absolute inset-16 rounded-full border border-leaf-300/35 sm:inset-20" />
 
-            <Suspense fallback={<div className="absolute inset-0" />}>
-              <DurianScene />
-            </Suspense>
+            <DurianHero />
 
             {/* floating chips */}
             <FloatChip delay={2.3} className="left-2 top-8 sm:left-6">

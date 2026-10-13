@@ -5,8 +5,8 @@ export const BRAND = {
   area: "Citra Raya, Tangerang",
 };
 
-export const WA_NUMBER = "6285150962310";
-export const WA_DISPLAY = "0851-5096-2310";
+export const WA_NUMBER = "6282253276700";
+export const WA_DISPLAY = "0822-5327-6700";
 
 export const waLink = (message?: string) =>
   `https://wa.me/${WA_NUMBER}${message ? `?text=${encodeURIComponent(message)}` : ""}`;
