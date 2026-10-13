@@ -1,5 +1,5 @@
 import { ArrowUp, AtSign, Clock, MapPin, MessageCircle } from "lucide-react";
-import { ADDRESS, BRAND, HOURS, NAV_LINKS, WA_DISPLAY, waLink } from "../data/site";
+import { ADDRESS, HOURS, NAV_LINKS, WA_DISPLAY, waLink } from "../data/site";
 import { scrollToId } from "../lib/scroll";
 
 const portfolioLinks = [
@@ -52,7 +52,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div aria-hidden className="font-display pointer-events-none mt-14 select-none text-center text-[12vw] font-bold leading-[0.85] text-white/[0.045] lg:text-[8rem]">CENTRAL BUAH SEGAR</div>
+        <div aria-hidden className="font-display pointer-events-none mt-14 select-none text-center text-[12vw] font-bold leading-[0.85] text-white/4.5 lg:text-[8rem]">CENTRAL BUAH SEGAR</div>
         <div className="mt-8 flex flex-wrap items-center justify-between gap-4 border-t border-white/10 pt-7">
           <p className="text-xs text-cream-100/45">© {new Date().getFullYear()} PT. Central Buah Segar. Seluruh hak cipta dilindungi.</p>
           <div className="flex items-center gap-5"><p className="text-xs font-semibold text-gold-300/70">Distributor Buah Lokal &amp; Impor</p><button onClick={() => scrollToId("#home")} aria-label="Kembali ke atas" className="grid h-10 w-10 place-items-center rounded-full border border-white/15 text-cream-100/70 transition-all duration-300 hover:border-gold-300 hover:bg-gold-400 hover:text-leaf-950"><ArrowUp className="h-4.5 w-4.5" /></button></div>

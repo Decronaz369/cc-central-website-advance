@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { EASE } from "./ui/primitives";
-import { BRAND } from "@/data/site";
 
 export default function Loader() {
   const [done, setDone] = useState(false);

@@ -7,7 +7,7 @@ import {
   MapPin,
   Navigation,
 } from "lucide-react";
-import { ADDRESS, BRAND, MAPS_EMBED, MAPS_URL } from "../data/site";
+import { ADDRESS, MAPS_EMBED, MAPS_URL } from "../data/site";
 import { OpenBadge, Reveal, SectionHeader } from "./ui/primitives";
 
 export default function LocationSection() {
