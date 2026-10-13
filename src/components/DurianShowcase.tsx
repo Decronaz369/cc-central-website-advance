@@ -127,17 +127,16 @@ export default function DurianShowcase() {
       <div className="relative mx-auto max-w-7xl px-5 lg:px-8">
         <SectionHeader
           tone="gold"
-          eyebrow="The Durian Room"
+          eyebrow="Portofolio Durian"
           title={
             <>
-              Mahakarya sang{" "}
+              Aneka durian dan{" "}
               <em className="bg-linear-to-r from-gold-500 to-gold-600 bg-clip-text italic text-transparent">
-                raja buah
+                produk turunannya.
               </em>
-              , dikurasi untuk Anda.
             </>
           }
-          desc="Dari Monthong Palu yang jadi best seller sampai Blackthorn sang kolektor — setiap buah dibuka, dicek, dan dijamin kualitasnya sebelum sampai ke tangan Anda."
+          desc="Portofolio durian mencakup pilihan buah utuh, varian premium, produk beku, dan olahan durian. Hubungi tim DC Central untuk informasi ketersediaan terbaru."
         />
 
         {/* ---------------- featured Monthong spotlight ---------------- */}
@@ -157,7 +156,7 @@ export default function DurianShowcase() {
               </span>
               <span className="glass absolute bottom-5 left-5 inline-flex items-center gap-1.5 rounded-full px-4 py-2 text-[11px] font-bold text-leaf-800">
                 <ShieldCheck className="h-3.5 w-3.5 text-leaf-600" />
-                Bergaransi 100% — ganti baru / refund
+                Pilihan Durian Premium
               </span>
             </div>
 

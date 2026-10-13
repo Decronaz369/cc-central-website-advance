@@ -8,7 +8,7 @@ export default function FloatingWhatsApp() {
       href={waLink(GENERIC_MESSAGE)}
       target="_blank"
       rel="noreferrer"
-      aria-label="Chat WhatsApp DC Central"
+      aria-label="Hubungi PT. Central Buah Segar / DC Central"
       initial={{ opacity: 0, scale: 0, y: 40 }}
       animate={{ opacity: 1, scale: 1, y: 0 }}
       transition={{ delay: 2.3, type: "spring", stiffness: 220, damping: 16 }}
@@ -28,7 +28,7 @@ export default function FloatingWhatsApp() {
 
       {/* tooltip */}
       <span className="pointer-events-none absolute right-full top-1/2 mr-4 hidden -translate-y-1/2 translate-x-2 items-center gap-2 whitespace-nowrap rounded-2xl bg-leaf-950 px-4 py-2.5 text-xs font-bold text-cream-50 opacity-0 shadow-soft transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100 sm:block">
-        Chat WhatsApp — Online 24 Jam
+        Informasi perusahaan & produk
         <span className="ml-2 inline-block h-1.5 w-1.5 animate-pulse rounded-full bg-[#25D366]" />
       </span>
 

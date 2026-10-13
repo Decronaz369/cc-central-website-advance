@@ -28,7 +28,7 @@ export default function Loader() {
               animate={{ scale: 1, rotate: 0, opacity: 1 }}
               transition={{ type: "spring", stiffness: 170, damping: 14 }}
               src="/Logo.jpg"
-              alt={BRAND.name}
+              alt="Logo DC Central"
               className=" h-20 w-20 place-items-center rounded-[1.6rem] shadow-soft"
             />
 
@@ -49,7 +49,7 @@ export default function Loader() {
               transition={{ delay: 0.55, duration: 0.6 }}
               className="mt-3 text-[11px] font-bold uppercase tracking-[0.32em] text-gold-600"
             >
-              Fresh · Premium · Bergaransi
+              Distributor Buah Lokal & Impor
             </motion.p>
 
             <div className="mt-8 h-1 w-48 overflow-hidden rounded-full bg-cream-200">

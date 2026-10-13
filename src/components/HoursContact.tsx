@@ -3,7 +3,7 @@ import { HOURS, WA_DISPLAY, waLink } from "../data/site";
 import { OpenBadge, Reveal } from "./ui/primitives";
 
 const ORDER_MESSAGE =
-  "Halo DC Central! Saya mau pesan buah / durian. Boleh info menu & stok hari ini?";
+  "Halo PT. Central Buah Segar / DC Central. Saya ingin bertanya mengenai informasi produk dan layanan perusahaan.";
 
 export default function HoursContact() {
   return (
@@ -21,12 +21,12 @@ export default function HoursContact() {
               <div>
                 <span className="inline-flex items-center gap-2 rounded-full border border-leaf-300/60 bg-white/70 px-4 py-1.5 text-[11px] font-bold uppercase tracking-[0.18em] text-leaf-700">
                   <Clock className="h-3.5 w-3.5" />
-                  Jam Operasional
+                  Kontak & Informasi
                 </span>
                 <h2 className="font-display mt-5 text-4xl font-semibold leading-tight tracking-tight text-leaf-950">
-                  Singgah, timbang,
+                  Mari terhubung
                   <br />
-                  bawa pulang.
+                  dengan perusahaan.
                 </h2>
 
                 <div className="mt-9 space-y-4">
@@ -36,7 +36,7 @@ export default function HoursContact() {
                     </span>
                     <div className="min-w-40 flex-1">
                       <p className="text-[11px] font-extrabold uppercase tracking-[0.16em] text-leaf-900/45">
-                        Toko Fisik &amp; Penimbangan
+                        Kanal Retail DC Central
                       </p>
                       <p className="mt-0.5 text-lg font-extrabold text-leaf-950">
                         {HOURS.label}
@@ -54,18 +54,18 @@ export default function HoursContact() {
                     </span>
                     <div className="min-w-40 flex-1">
                       <p className="text-[11px] font-extrabold uppercase tracking-[0.16em] text-leaf-900/45">
-                        WhatsApp &amp; Order Online
+                        Informasi Produk &amp; Layanan
                       </p>
                       <p className="mt-0.5 text-lg font-extrabold text-leaf-950">
-                        Aktif 24 Jam
+                        Hubungi Tim Kami
                       </p>
                       <p className="text-xs font-medium italic leading-snug text-leaf-900/55">
-                        Order di luar jam toko ditimbang &amp; diproses pukul
-                        09.00 WIB saat toko buka.
+                        Untuk informasi produk, ketersediaan, atau pertanyaan
+                        mengenai layanan perusahaan.
                       </p>
                     </div>
                     <span className="rounded-full bg-gold-100 px-3.5 py-1.5 text-xs font-bold text-gold-800 border border-gold-300/60">
-                      Fast Response
+                      WhatsApp
                     </span>
                   </div>
                 </div>
@@ -75,7 +75,7 @@ export default function HoursContact() {
               <div className="glass flex flex-col justify-center rounded-[2.25rem] p-7 shadow-card sm:p-9">
                 <Quote className="h-6 w-6 rotate-180 text-gold-500" />
                 <p className="font-display mt-3 text-xl font-semibold italic leading-relaxed text-leaf-900">
-                  “Pesan buah segar kini semudah kirim chat.”
+                  “Informasi yang jelas adalah awal dari hubungan kerja sama yang baik.”
                 </p>
 
                 <p className="mt-7 text-[11px] font-extrabold uppercase tracking-[0.2em] text-leaf-900/45">

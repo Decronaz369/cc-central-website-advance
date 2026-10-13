@@ -116,13 +116,13 @@ export default function FruitCatalog() {
         <div className="flex flex-wrap items-end justify-between gap-8">
           <SectionHeader
             align="left"
-            eyebrow="Katalog Buah Segar"
+            eyebrow="Portofolio Buah"
             title={
               <>
-                Pilih buah favoritmu,
+                Pilihan buah lokal
                 <br />
                 <em className="bg-linear-to-r from-leaf-500 to-leaf-700 bg-clip-text italic text-transparent">
-                  kami sortir yang terbaik.
+                  dan buah impor.
                 </em>
               </>
             }

@@ -65,21 +65,21 @@ export default function Navbar() {
           >
             <img
               src="/Logo.jpg"
-              alt={BRAND.name}
+              alt="Logo DC Central"
               className=" h-11 w-11 overflow-hidden rounded-2xl shadow-card transition-transform duration-500 group-hover:rotate-6 group-hover:scale-105"
             />
             <span className="text-left leading-none">
-              <span className="font-display block text-[19px] font-bold tracking-tight text-leaf-950">
-                DC Central
+              <span className="font-display block text-[16px] font-bold tracking-tight text-leaf-950 sm:text-[18px]">
+                PT. Central Buah Segar
               </span>
-              <span className="mt-1 block text-[10px] font-bold uppercase tracking-[0.2em] text-gold-600">
-                Durian Castle
+              <span className="mt-1 block text-[9px] font-bold uppercase tracking-[0.16em] text-gold-600">
+                Distributor Buah Lokal &amp; Impor
               </span>
             </span>
           </button>
 
           {/* desktop links */}
-          <nav className="hidden items-center gap-6 xl:gap-7 lg:flex">
+          <nav className="hidden items-center gap-3 xl:gap-5 lg:flex">
             {NAV_LINKS.map((l) => (
               <button
                 key={l.id}
@@ -99,7 +99,7 @@ export default function Navbar() {
               className="shine hidden items-center gap-2 rounded-full bg-linear-to-r from-leaf-600 to-leaf-500 py-2.5 pl-4 pr-5 text-sm font-bold text-white shadow-card transition-all duration-300 hover:-translate-y-0.5 hover:shadow-soft sm:inline-flex"
             >
               <MessageCircle className="h-4 w-4" />
-              Order via WhatsApp
+              Hubungi Kami
             </a>
             <button
               onClick={() => setOpen(true)}
@@ -140,12 +140,12 @@ export default function Navbar() {
                 <div className="flex items-center gap-2.5">
                   <img
                     src="/Logo.jpg"
-                    alt={BRAND.name}
+                    alt="Logo DC Central"
                     className="h-10 w-10 rounded-xl"
                   >
                   </img>
                   <span className="font-display text-lg font-bold">
-                    DC Central
+                    PT. Central Buah Segar
                   </span>
                 </div>
                 <button
@@ -183,10 +183,10 @@ export default function Navbar() {
                   className="flex items-center justify-center gap-2 rounded-2xl bg-linear-to-r from-leaf-600 to-leaf-500 px-5 py-4 text-sm font-bold text-white shadow-card"
                 >
                   <MessageCircle className="h-4.5 w-4.5" />
-                  Order via WhatsApp — 24 Jam
+                  Hubungi Kami via WhatsApp
                 </a>
                 <p className="text-center text-xs text-leaf-900/50">
-                  Toko buka 09.00–22.00 WIB · {BRAND.area}
+                  Kanal retail DC Central · {BRAND.area}
                 </p>
               </div>
             </motion.aside>

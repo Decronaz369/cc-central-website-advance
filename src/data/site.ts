@@ -1,7 +1,7 @@
 export const BRAND = {
-  name: "DC Central",
-  parent: "@duriancastle.id",
-  tagline: "Fresh Fruits & Premium Durian in Tangerang",
+  name: "PT. Central Buah Segar",
+  parent: "DC Central · @duriancastle.id",
+  tagline: "Distributor Buah Lokal & Impor",
   area: "Citra Raya, Tangerang",
 };
 
@@ -15,7 +15,7 @@ export const orderMessage = (item: string) =>
   `Halo DC Central! Saya ingin memesan *${item}*. Mohon info stok & harga hari ini ya. Terima kasih.`;
 
 export const GENERIC_MESSAGE =
-  "Halo DC Central! Saya ingin bertanya tentang buah segar & durian yang tersedia hari ini.";
+  "Halo PT. Central Buah Segar / DC Central. Saya ingin memperoleh informasi mengenai perusahaan, portofolio produk, dan layanan yang tersedia.";
 
 export const MAPS_URL = "https://maps.app.goo.gl/JTZJd9aLtkp4UxNd9";
 export const MAPS_EMBED =
@@ -36,11 +36,10 @@ export const HOURS = {
 
 export const NAV_LINKS = [
   { id: "home", label: "Beranda" },
-  { id: "tentang", label: "Tentang" },
-  { id: "durian", label: "Durian" },
-  { id: "katalog", label: "Produk" },
-  { id: "promo", label: "Promo" },
-  { id: "garansi", label: "Garansi" },
+  { id: "tentang", label: "Profil" },
+  { id: "visi-misi", label: "Visi & Misi" },
+  { id: "layanan-bisnis", label: "Bidang Usaha" },
+  { id: "portofolio", label: "Portofolio" },
   { id: "lokasi", label: "Lokasi" },
   { id: "kontak", label: "Kontak" },
 ];

@@ -24,14 +24,12 @@ import {
 /* ------------------------------------------------------------------ */
 
 export const marqueeItems = [
-  "Buah Segar Setiap Hari",
-  "Durian Premium Monthong Palu",
-  "Free Ongkir Citra Raya",
-  "Garansi Durian 100%",
-  "Buah Impor Pilihan",
+  "PT. Central Buah Segar",
   "Distributor Buah Lokal & Impor",
-  "Buka 09.00–22.00 WIB",
-  "WhatsApp Aktif 24 Jam",
+  "Portofolio Buah Segar",
+  "Pilihan Durian Premium",
+  "Kanal Retail DC Central",
+  "Berbasis di Citra Raya, Tangerang",
 ];
 
 /* ------------------------------------------------------------------ */

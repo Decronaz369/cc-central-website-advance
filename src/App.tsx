@@ -6,17 +6,13 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Marquee from "./components/Marquee";
 import About from "./components/About";
+import CompanyDirection from "./components/CompanyDirection";
+import CorporateServices from "./components/CorporateServices";
 import Categories from "./components/Categories";
 import DurianShowcase from "./components/DurianShowcase";
 import FruitCatalog from "./components/FruitCatalog";
-import PromoSection from "./components/PromoSection";
-import WhyUs from "./components/WhyUs";
-import Guarantee from "./components/Guarantee";
-import Delivery from "./components/Delivery";
 import LocationSection from "./components/LocationSection";
 import HoursContact from "./components/HoursContact";
-import Testimonials from "./components/Testimonials";
-import Faq from "./components/Faq";
 import Footer from "./components/Footer";
 import FloatingWhatsApp from "./components/FloatingWhatsApp";
 
@@ -29,24 +25,18 @@ export default function App() {
       <div className="noise-overlay" aria-hidden />
       <CursorGlow />
       <Navbar />
-
       <main>
         <Hero />
         <Marquee />
         <About />
+        <CompanyDirection />
+        <CorporateServices />
         <Categories />
         <DurianShowcase />
         <FruitCatalog />
-        <PromoSection />
-        <WhyUs />
-        <Guarantee />
-        <Delivery />
         <LocationSection />
         <HoursContact />
-        <Testimonials />
-        <Faq />
       </main>
-
       <Footer />
       <FloatingWhatsApp />
     </div>

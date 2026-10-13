@@ -33,12 +33,12 @@ export default function LocationSection() {
             <div className="flex h-full flex-col rounded-[2.5rem] border border-white/80 bg-white p-8 shadow-soft sm:p-10">
               <SectionHeader
                 align="left"
-                eyebrow="Kunjungi Toko Kami"
+                eyebrow="Lokasi Kanal Retail"
                 title={
                   <>
-                    Mampir, cium wanginya{" "}
+                    Temukan DC Central di{" "}
                     <em className="bg-linear-to-r from-gold-500 to-gold-600 bg-clip-text italic text-transparent">
-                      durian premium.
+                      Citra Raya.
                     </em>
                   </>
                 }
@@ -53,7 +53,7 @@ export default function LocationSection() {
                   </span>
                   <div>
                     <p className="text-[11px] font-extrabold uppercase tracking-[0.18em] text-leaf-900/45">
-                      Alamat Utama
+                      Alamat DC Central
                     </p>
                     <p className="mt-1 text-[15px] font-bold leading-relaxed text-leaf-950">
                       {ADDRESS.primary}
@@ -67,7 +67,7 @@ export default function LocationSection() {
                   </span>
                   <div>
                     <p className="text-[11px] font-extrabold uppercase tracking-[0.18em] text-leaf-900/45">
-                      Alamat Lengkap
+                      Detail Lokasi
                     </p>
                     <p className="mt-1 text-sm font-medium leading-relaxed text-leaf-900/70">
                       {ADDRESS.full}
@@ -128,7 +128,7 @@ export default function LocationSection() {
               <div className="glass absolute left-5 top-5 flex items-center gap-3 rounded-2xl px-4 py-3 shadow-card">
                 <img
                   src="/Logo.jpg"
-                  alt={BRAND.name}
+                  alt="Logo DC Central"
                   className=" h-10 w-10 rounded-xl "
                 ></img>
                 <div className="leading-tight">
