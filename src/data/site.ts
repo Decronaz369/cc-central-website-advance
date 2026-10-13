@@ -19,7 +19,7 @@ export const GENERIC_MESSAGE =
 
 export const MAPS_URL = "https://maps.app.goo.gl/JTZJd9aLtkp4UxNd9";
 export const MAPS_EMBED =
-  "https://maps.google.com/maps?q=Ruko%20Grand%20Boulevard%20E%20No%201%20Ciakar%20Panongan%20Tangerang&t=&z=16&ie=UTF8&iwloc=&output=embed";
+  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.9954573353148!2d106.5247543!3d-6.2643264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e42073aacb68e11%3A0xf046863c535cf5dd!2sDC%20Central!5e0!3m2!1sen!2ssg!4v1791909054061!5m2!1sen!2ssg";
 
 export const ADDRESS = {
   primary: "Ruko Grand Boulevard E No. 1, Ciakar, Panongan, Kabupaten Tangerang, Banten 15710",
