@@ -164,11 +164,10 @@ export const fruitProducts: FruitProduct[] = [
     image: "/images/fruits/manggis.png",
     accent: "from-purple-300/60 to-fuchsia-400/60",
   },
-  /* ---------------------------- Buah Impor ---------------------------- */
   {
     id: "lengkeng",
     name: "Lengkeng",
-    origin: "Impor",
+    origin: "Lokal",
     desc: "Daging tebal super manis, biji kecil, juicy.",
     image: "/images/fruits/lengkeng.png",
     accent: "from-yellow-200/80 to-amber-300/70",
@@ -176,7 +175,7 @@ export const fruitProducts: FruitProduct[] = [
   {
     id: "anggur",
     name: "Anggur",
-    origin: "Impor",
+    origin: "Lokal",
     desc: "Manis crunchy nyaris tanpa biji, selalu segar.",
     image: "/images/fruits/anggur.png",
     accent: "from-purple-300/60 to-rose-400/60",
@@ -184,7 +183,7 @@ export const fruitProducts: FruitProduct[] = [
   {
     id: "apel",
     name: "Apel",
-    origin: "Impor",
+    origin: "Lokal",
     desc: "Manis-asam seimbang, harum, cocok untuk jus.",
     image: "/images/fruits/apel.png",
     accent: "from-red-300/60 to-orange-300/70",
