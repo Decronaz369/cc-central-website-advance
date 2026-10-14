@@ -231,7 +231,7 @@ export default function Hero() {
             <div className="absolute inset-16 rounded-full border border-leaf-300/35 sm:inset-20" />
             <DurianHero />
 
-            <FloatChip delay={2.0} className="left-0 top-8 sm:left-5">
+            <FloatChip delay={2.0} className="left-0 top-16 sm:left-5">
               <div className="flex items-center gap-2.5 px-4 py-3">
                 <span className="grid h-9 w-9 place-items-center rounded-xl bg-leaf-100 text-leaf-700">
                   <Leaf className="h-4.5 w-4.5" />
@@ -246,7 +246,7 @@ export default function Hero() {
                 </div>
               </div>
             </FloatChip>
-            <FloatChip delay={2.2} className="right-0 top-20 sm:right-3">
+            <FloatChip delay={2.2} className="mr-16 top-2 sm:right-3">
               <div className="flex items-center gap-3 px-3.5 py-3 pr-5">
                 <img
                   src="/images/about-store.png"
