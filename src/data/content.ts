@@ -14,7 +14,6 @@ import {
   ShieldCheck,
   Snowflake,
   Sparkles,
-  CakeSlice,
   Truck,
   type LucideIcon,
 } from "lucide-react";
@@ -101,14 +100,6 @@ export const categories: Category[] = [
     target: "#durian",
     gradient: "from-cyan-200 via-cyan-100 to-cream-100",
     iconColor: "text-cyan-700",
-  },
-  {
-    icon: CakeSlice,
-    title: "Pancake Durian Roll",
-    desc: "Olahan durian lembut ukuran big, favorit sekeluarga.",
-    target: "#durian",
-    gradient: "from-pink-200 via-pink-100 to-cream-100",
-    iconColor: "text-pink-700",
   },
 ];
 
