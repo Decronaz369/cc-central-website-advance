@@ -1,4 +1,4 @@
-import { Fragment, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Citrus, MessageCircle, Search, Sparkles } from "lucide-react";
 import {
@@ -69,13 +69,13 @@ function FruitCard({ p, index }: { p: FruitProduct; index: number }) {
         </p>
         <div className="mt-3 flex items-center justify-between border-t border-cream-200 pt-3">
           <span className="text-[10px] font-extrabold uppercase tracking-[0.14em] text-leaf-900/40">
-            Info produk
+            Harga harian
           </span>
           <a
             href={waLink(orderMessage(p.name))}
             target="_blank"
             rel="noreferrer"
-            aria-label={`Tanya ketersediaan ${p.name}`}
+            aria-label={`Tanya harga ${p.name}`}
             className="grid h-9 w-9 place-items-center rounded-full bg-cream-100 text-leaf-700 transition-all duration-300 hover:bg-leaf-600 hover:text-white"
           >
             <MessageCircle className="h-4 w-4" />
@@ -197,17 +197,7 @@ export default function FruitCatalog() {
         >
           <AnimatePresence mode="popLayout">
             {list.map((p, i) => (
-              <Fragment key={p.id}>
-                {(i === 0 || list[i - 1].origin !== p.origin) && (
-                  <div className="col-span-full flex items-center gap-3 pt-2 first:pt-0">
-                    <span className={`rounded-full px-4 py-1.5 text-[10px] font-extrabold uppercase tracking-[0.18em] ${p.origin === "Lokal" ? "bg-leaf-100 text-leaf-700" : "bg-sky-100 text-sky-700"}`}>
-                      {p.origin}
-                    </span>
-                    <span className="h-px flex-1 bg-leaf-900/10" />
-                  </div>
-                )}
-                <FruitCard p={p} index={i} />
-              </Fragment>
+              <FruitCard key={p.id} p={p} index={i} />
             ))}
           </AnimatePresence>
         </motion.div>
@@ -246,7 +236,8 @@ export default function FruitCatalog() {
         {/* footnote */}
         <Reveal delay={0.1}>
           <p className="mt-10 text-center text-xs font-semibold text-leaf-900/45">
-            Pilihan produk dapat berubah mengikuti stok dan musim. Hubungi tim DC Central untuk informasi ketersediaan.
+            Harga buah mengikuti stok & musim — chat WhatsApp untuk harga paling
+            update hari ini.
           </p>
         </Reveal>
       </div>

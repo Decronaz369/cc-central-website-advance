@@ -6,7 +6,6 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Marquee from "./components/Marquee";
 import About from "./components/About";
-import HarvestGallery from "./components/HarvestGallery";
 import CompanyDirection from "./components/CompanyDirection";
 import CorporateServices from "./components/CorporateServices";
 import Categories from "./components/Categories";
@@ -30,7 +29,6 @@ export default function App() {
         <Hero />
         <Marquee />
         <About />
-        <HarvestGallery />
         <CompanyDirection />
         <CorporateServices />
         <Categories />

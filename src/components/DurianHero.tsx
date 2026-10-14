@@ -1,8 +1,9 @@
 import { motion, useReducedMotion } from "framer-motion";
 
 /**
- * Animated fruit collage for the site hero, combining a basket of assorted
- * produce with durian and orchard imagery.
+ * Hero visual: the client's durian photo with a gentle up-and-down bob.
+ * Replaces the old WebGL scene — the surrounding decoration (orbiting rings,
+ * floating orbs, sparkles and ground shadow) is kept so the look is unchanged.
  */
 
 const BOB = {
@@ -64,41 +65,21 @@ export default function DurianHero() {
         className="absolute bottom-[8%] left-1/2 h-[5%] w-[44%] -translate-x-1/2 rounded-[50%] bg-[#5a4416] blur-xl"
       />
 
-      {/* mixed fruit hero collage */}
-      <motion.div
-        className="absolute inset-0 flex items-center justify-center"
-        animate={reduce ? undefined : { y: [0, -8, 0] }}
-        transition={BOB}
-      >
-        <div className="relative h-[82%] w-[86%]">
-          <img
-            src="https://images.unsplash.com/photo-1519097000072-e44ffa116485?auto=format&fit=crop&w=1200&q=85"
-            alt="Aneka buah tropis segar dalam keranjang"
-            className="absolute left-[10%] top-[18%] z-10 h-[58%] w-[78%] rounded-[2rem] border-[6px] border-white/90 object-cover shadow-[0_28px_50px_rgba(45,65,31,0.22)]"
-            loading="eager"
-          />
-          <img
-            src="https://images.unsplash.com/photo-1755842546298-d5cb56b5afee?auto=format&fit=crop&w=700&q=80"
-            alt="Buah mangga di kebun"
-            className="absolute right-0 top-[2%] z-20 h-[34%] w-[38%] rounded-3xl border-4 border-white object-cover shadow-soft rotate-3"
-            loading="lazy"
-          />
-          <motion.img
-            src="/Durian.png"
-            alt="Durian premium DC Central"
-            draggable={false}
-            animate={reduce ? undefined : { y: [0, -12, 0], rotate: [-2, 1, -2] }}
-            transition={BOB}
-            className="absolute bottom-[0%] left-[-2%] z-20 h-[47%] w-auto max-w-[46%] select-none object-contain drop-shadow-[0_20px_20px_rgba(90,68,22,0.28)]"
-          />
-          <img
-            src="/images/fruits/anggur.png"
-            alt="Anggur segar"
-            className="absolute bottom-[0%] right-[0%] z-20 h-[28%] w-[32%] rounded-2xl border-4 border-white object-cover shadow-soft -rotate-3"
-            loading="lazy"
-          />
-        </div>
-      </motion.div>
+      {/* the durian itself */}
+      <div className="absolute inset-0 flex items-center justify-center">
+        <motion.img
+          src="/Durian.png"
+          alt="Durian premium DC Central"
+          draggable={false}
+          animate={
+            reduce
+              ? undefined
+              : { y: [0, -22, 0], rotate: [-1.5, 1.5, -1.5] }
+          }
+          transition={BOB}
+          className="relative z-1 h-[76%] w-auto select-none drop-shadow-[0_28px_28px_rgba(90,68,22,0.28)]"
+        />
+      </div>
 
       {/* floating orbs */}
       {orbs.map((o, i) => (

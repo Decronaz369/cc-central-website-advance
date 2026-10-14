@@ -4,7 +4,7 @@
 
 export type BadgeTone = "gold" | "green" | "pink" | "orange" | "sky" | "lime";
 
-export type DurianCategory = "Buah Utuh" | "Frozen" | "Premium";
+export type DurianCategory = "Buah Utuh" | "Frozen" | "Premium" | "Olahan";
 
 export interface DurianProduct {
   id: string;
@@ -13,6 +13,10 @@ export interface DurianProduct {
   image: string;
   badge?: { label: string; tone: BadgeTone };
   category: DurianCategory;
+  priceLabel: string;
+  priceNote?: string;
+  /** Extended info used by the featured spotlight card */
+  prices?: { label: string; value: string }[];
   taste?: { label: string; value: number }[];
 }
 
@@ -24,6 +28,12 @@ export const durianProducts: DurianProduct[] = [
     image: "/images/durian-monthong.png",
     badge: { label: "Best Seller", tone: "gold" },
     category: "Buah Utuh",
+    priceLabel: "Rp79.900",
+    priceNote: "per kg · buah utuh ditimbang",
+    prices: [
+      { label: "Buah Utuh Ditimbang", value: "Rp79.900/kg" },
+      { label: "Frozen Premium Box 500g", value: "Rp85.000" },
+    ],
     taste: [
       { label: "Manis", value: 92 },
       { label: "Creamy", value: 96 },
@@ -37,38 +47,8 @@ export const durianProducts: DurianProduct[] = [
     image: "/images/durian-frozen-box.png",
     badge: { label: "Frozen", tone: "sky" },
     category: "Frozen",
-  },
-  {
-    id: "frozen-musangking",
-    name: "Frozen Musang King",
-    desc: "Daging Musang King pilihan dalam kondisi beku untuk menjaga rasa dan teksturnya.",
-    image: "/images/musang-king.png",
-    badge: { label: "Frozen", tone: "sky" },
-    category: "Frozen",
-  },
-  {
-    id: "frozen-bawor",
-    name: "Frozen Bawor",
-    desc: "Pilihan durian Bawor beku untuk dinikmati di rumah atau diolah menjadi hidangan favorit.",
-    image: "/images/durian-monthong.png",
-    badge: { label: "Frozen", tone: "sky" },
-    category: "Frozen",
-  },
-  {
-    id: "frozen-medan",
-    name: "Frozen Medan",
-    desc: "Durian Medan beku sebagai pilihan praktis saat ingin menikmati durian.",
-    image: "/images/monthong-parigi2.png",
-    badge: { label: "Frozen", tone: "sky" },
-    category: "Frozen",
-  },
-  {
-    id: "frozen-blackthorn",
-    name: "Frozen Blackthorn",
-    desc: "Varian Blackthorn dalam pilihan frozen, dengan cita rasa khas dan tekstur lembut.",
-    image: "/images/blackthorn.png",
-    badge: { label: "Frozen", tone: "sky" },
-    category: "Frozen",
+    priceLabel: "Rp85.000",
+    priceNote: "per box · isi 500 gram",
   },
   {
     id: "musang-king",
@@ -77,6 +57,8 @@ export const durianProducts: DurianProduct[] = [
     image: "/images/musang-king.png",
     badge: { label: "Premium", tone: "green" },
     category: "Premium",
+    priceLabel: "Tanya Hari Ini",
+    priceNote: "stok premium musiman",
   },
   {
     id: "blackthorn",
@@ -85,6 +67,8 @@ export const durianProducts: DurianProduct[] = [
     image: "/images/blackthorn.png",
     badge: { label: "Rare", tone: "pink" },
     category: "Premium",
+    priceLabel: "Tanya Hari Ini",
+    priceNote: "stok sangat terbatas",
   },
   {
     id: "montong-parigi",
@@ -92,6 +76,18 @@ export const durianProducts: DurianProduct[] = [
     desc: "Legenda dari Parigi Moutong: daging tebal, legit tanpa pahit, favorit dari penikmat pemula sampai kolektor.",
     image: "/images/monthong-parigi2.png",
     category: "Buah Utuh",
+    priceLabel: "Ditimbang Utuh",
+    priceNote: "harga harian per kg",
+  },
+  {
+    id: "pancake-roll",
+    name: "Pancake Durian Roll Big",
+    desc: "Kulit lembut berisi krim durian asli yang melimpah dalam ukuran big. Manisnya pas, lumer di setiap gigitan.",
+    image: "/images/pancake-durian.png",
+    badge: { label: "Favorit", tone: "orange" },
+    category: "Olahan",
+    priceLabel: "Tanya Hari Ini",
+    priceNote: "ukuran big · fresh made",
   },
 ];
 
@@ -110,30 +106,94 @@ export interface FruitProduct {
   accent: string; // tailwind gradient classes for card glow
 }
 
-const fruitDescription = "Pilihan buah segar, dipilih sesuai ketersediaan dan musim.";
-
 export const fruitProducts: FruitProduct[] = [
   /* ---------------------------- Buah Lokal ---------------------------- */
-  { id: "pepaya", name: "Pepaya", origin: "Lokal", desc: fruitDescription, image: "https://images.unsplash.com/photo-1619535962037-feb40b6823fd?auto=format&fit=crop&w=700&h=700&q=80", accent: "from-orange-300/70 to-rose-300/70" },
-  { id: "pamelo", name: "Pamelo", origin: "Lokal", desc: fruitDescription, image: "/images/fruits/jeruk-siam.png", accent: "from-lime-300/70 to-yellow-400/70" },
-  { id: "duku", name: "Duku", origin: "Lokal", desc: fruitDescription, image: "/images/fruits/lengkeng.png", accent: "from-yellow-200/80 to-amber-300/70" },
-  { id: "rambutan", name: "Rambutan", origin: "Lokal", desc: fruitDescription, image: "https://images.unsplash.com/photo-1519097000072-e44ffa116485?auto=format&fit=crop&w=700&h=700&q=80", accent: "from-rose-300/70 to-red-400/60" },
-  { id: "alpukat", name: "Alpukat", origin: "Lokal", desc: fruitDescription, image: "https://images.unsplash.com/photo-1704960961278-a0376a031054?auto=format&fit=crop&w=700&h=700&q=80", accent: "from-leaf-300/70 to-emerald-400/70" },
-  { id: "mangga-harummanis", name: "Mangga Harummanis", origin: "Lokal", desc: fruitDescription, image: "/images/fruits/mangga.png", accent: "from-amber-300/70 to-orange-400/70" },
-  { id: "mangga-indramayu", name: "Mangga Indramayu", origin: "Lokal", desc: fruitDescription, image: "/images/fruits/mangga.png", accent: "from-amber-300/70 to-orange-400/70" },
-  { id: "mangga-kiojay", name: "Mangga Kiojay", origin: "Lokal", desc: fruitDescription, image: "/images/fruits/mangga.png", accent: "from-amber-300/70 to-orange-400/70" },
-  { id: "mangga-manlagi", name: "Mangga Manalagi", origin: "Lokal", desc: fruitDescription, image: "/images/fruits/mangga.png", accent: "from-amber-300/70 to-orange-400/70" },
-  { id: "strawberry", name: "Strawberry", origin: "Lokal", desc: fruitDescription, image: "https://images.unsplash.com/photo-1685130050521-821d122f4915?auto=format&fit=crop&w=700&h=700&q=80", accent: "from-rose-300/70 to-red-400/60" },
-
-  /* ---------------------------- Buah Impor ---------------------------- */
-  { id: "pear-golden", name: "Pear Golden", origin: "Impor", desc: fruitDescription, image: "/images/fruits/apel.png", accent: "from-yellow-200/80 to-amber-300/70" },
-  { id: "pear-singo", name: "Pear Singo", origin: "Impor", desc: fruitDescription, image: "/images/fruits/apel.png", accent: "from-lime-200/80 to-emerald-300/60" },
-  { id: "pear-packham", name: "Pear Packham", origin: "Impor", desc: fruitDescription, image: "/images/fruits/apel.png", accent: "from-lime-300/70 to-yellow-400/70" },
-  { id: "sunkist-navel", name: "Sunkist Navel", origin: "Impor", desc: fruitDescription, image: "/images/fruits/jeruk-impor.png", accent: "from-orange-300/70 to-amber-400/70" },
-  { id: "anggur-hijau", name: "Anggur Hijau", origin: "Impor", desc: fruitDescription, image: "/images/fruits/anggur.png", accent: "from-lime-300/70 to-emerald-300/60" },
-  { id: "anggur-hitam", name: "Anggur Hitam", origin: "Impor", desc: fruitDescription, image: "/images/fruits/anggur.png", accent: "from-purple-300/60 to-fuchsia-400/60" },
-  { id: "anggur-merah", name: "Anggur Merah", origin: "Impor", desc: fruitDescription, image: "/images/fruits/anggur.png", accent: "from-purple-300/60 to-rose-400/60" },
-  { id: "delima", name: "Delima", origin: "Impor", desc: fruitDescription, image: "https://images.unsplash.com/photo-1638838373631-7818d08fc42c?auto=format&fit=crop&w=700&h=700&q=80", accent: "from-rose-300/70 to-red-400/60" },
-  { id: "strawberry-impor", name: "Strawberry Impor", origin: "Impor", desc: fruitDescription, image: "https://images.unsplash.com/photo-1685130050521-821d122f4915?auto=format&fit=crop&w=700&h=700&q=80", accent: "from-rose-300/70 to-red-400/60" },
-  { id: "plum", name: "Plum", origin: "Impor", desc: fruitDescription, image: "/images/fruits/apel.png", accent: "from-purple-300/60 to-fuchsia-400/60" },
+  {
+    id: "mangga",
+    name: "Mangga",
+    origin: "Lokal",
+    desc: "Manis legit, daging tebal dan juicy.",
+    image: "/images/fruits/mangga.png",
+    accent: "from-amber-300/70 to-orange-400/70",
+  },
+  {
+    id: "jeruk-siam",
+    name: "Jeruk Siam",
+    origin: "Lokal",
+    desc: "Segar manis-asam, banyak air, kaya vitamin C.",
+    image: "/images/fruits/jeruk-siam.png",
+    accent: "from-lime-300/70 to-yellow-400/70",
+  },
+  {
+    id: "melon",
+    name: "Melon",
+    origin: "Lokal",
+    desc: "Daging tebal renyah, harum, manis dan menyegarkan.",
+    image: "/images/fruits/melon.png",
+    accent: "from-lime-200/80 to-emerald-300/60",
+  },
+  {
+    id: "semangka",
+    name: "Semangka",
+    origin: "Lokal",
+    desc: "Merah merona, renyah, manis dan berair.",
+    image: "/images/fruits/semangka.png",
+    accent: "from-rose-300/70 to-red-400/60",
+  },
+  {
+    id: "nanas",
+    name: "Nanas",
+    origin: "Lokal",
+    desc: "Manis-asam seimbang, harum, cocok untuk jus.",
+    image: "/images/fruits/nanas.png",
+    accent: "from-yellow-200/80 to-amber-400/70",
+  },
+  {
+    id: "salak",
+    name: "Salak",
+    origin: "Lokal",
+    desc: "Renyah, manis sedikit sepat, mudah dikupas.",
+    image: "/images/fruits/salak.png",
+    accent: "from-amber-300/60 to-orange-500/60",
+  },
+  {
+    id: "manggis",
+    name: "Manggis",
+    origin: "Lokal",
+    desc: "Sang ratu buah: lembut, manis-asam menyegarkan.",
+    image: "/images/fruits/manggis.png",
+    accent: "from-purple-300/60 to-fuchsia-400/60",
+  },
+  {
+    id: "lengkeng",
+    name: "Lengkeng",
+    origin: "Lokal",
+    desc: "Daging tebal super manis, biji kecil, juicy.",
+    image: "/images/fruits/lengkeng.png",
+    accent: "from-yellow-200/80 to-amber-300/70",
+  },
+  {
+    id: "anggur",
+    name: "Anggur",
+    origin: "Lokal",
+    desc: "Manis crunchy nyaris tanpa biji, selalu segar.",
+    image: "/images/fruits/anggur.png",
+    accent: "from-purple-300/60 to-rose-400/60",
+  },
+  {
+    id: "apel",
+    name: "Apel",
+    origin: "Lokal",
+    desc: "Manis-asam seimbang, harum, cocok untuk jus.",
+    image: "/images/fruits/apel.png",
+    accent: "from-red-300/60 to-orange-300/70",
+  },
+  {
+    id: "jeruk-impor",
+    name: "Jeruk Impor",
+    origin: "Impor",
+    desc: "Jeruk premium impor: manis, juicy, mudah dikupas.",
+    image: "/images/fruits/jeruk-impor.png",
+    accent: "from-orange-300/70 to-amber-400/70",
+  },
 ];
