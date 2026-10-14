@@ -80,14 +80,26 @@ export const durianProducts: DurianProduct[] = [
     priceNote: "harga harian per kg",
   },
   {
-    id: "pancake-roll",
-    name: "Pancake Durian Roll Big",
-    desc: "Kulit lembut berisi krim durian asli yang melimpah dalam ukuran big. Manisnya pas, lumer di setiap gigitan.",
-    image: "/images/pancake-durian.png",
-    badge: { label: "Favorit", tone: "orange" },
-    category: "Olahan",
-    priceLabel: "Tanya Hari Ini",
-    priceNote: "ukuran big · fresh made",
+    id: "frozen-musangking", name: "Frozen Musang King",
+    desc: "Daging durian Musang King pilihan dalam bentuk beku.",
+    image: "/images/durian-frozen-box.png", badge: { label: "Frozen", tone: "sky" },
+    category: "Frozen", priceLabel: "",
+  },
+  {
+    id: "frozen-bawor", name: "Frozen Bawor",
+    desc: "Pilihan daging durian Bawor beku untuk dinikmati kapan saja.",
+    image: "/images/durian-monthong.png", category: "Frozen", priceLabel: "",
+  },
+  {
+    id: "frozen-medan", name: "Frozen Medan",
+    desc: "Durian Medan dalam bentuk beku, praktis untuk disimpan.",
+    image: "/images/monthong-parigi2.png", category: "Frozen", priceLabel: "",
+  },
+  {
+    id: "frozen-blackthorn", name: "Frozen Blackthorn",
+    desc: "Varian Blackthorn premium dalam bentuk beku.",
+    image: "/images/blackthorn.png", badge: { label: "Frozen", tone: "sky" },
+    category: "Frozen", priceLabel: "",
   },
 ];
 
@@ -195,5 +207,86 @@ export const fruitProducts: FruitProduct[] = [
     desc: "Jeruk premium impor: manis, juicy, mudah dikupas.",
     image: "/images/fruits/jeruk-impor.png",
     accent: "from-orange-300/70 to-amber-400/70",
+  },,
+  {
+    id: "pepaya", name: "Pepaya", origin: "Lokal", desc: "Pepaya matang dengan rasa manis dan tekstur lembut.",
+    image: "/images/fruits/melon.png", accent: "from-leaf-300/70 to-emerald-400/70",
   },
+  {
+    id: "pamelo", name: "Pamelo", origin: "Lokal", desc: "Buah sitrus berukuran besar dengan rasa segar.",
+    image: "/images/fruits/jeruk-siam.png", accent: "from-leaf-300/70 to-emerald-400/70",
+  },
+  {
+    id: "duku", name: "Duku", origin: "Lokal", desc: "Duku dengan rasa manis dan menyegarkan.",
+    image: "/images/fruits/lengkeng.png", accent: "from-leaf-300/70 to-emerald-400/70",
+  },
+  {
+    id: "rambutan", name: "Rambutan", origin: "Lokal", desc: "Rambutan dengan daging buah manis dan berair.",
+    image: "/images/fruits/lengkeng.png", accent: "from-leaf-300/70 to-emerald-400/70",
+  },
+  {
+    id: "alpukat", name: "Alpukat", origin: "Lokal", desc: "Alpukat dengan tekstur lembut dan creamy.",
+    image: "/images/fruits/manggis.png", accent: "from-leaf-300/70 to-emerald-400/70",
+  },
+  {
+    id: "mangga-harummanis", name: "Mangga Harummanis", origin: "Lokal", desc: "Mangga Harummanis yang dikenal dengan aroma harum dan rasa manis.",
+    image: "/images/fruits/mangga.png", accent: "from-leaf-300/70 to-emerald-400/70",
+  },
+  {
+    id: "mangga-indramayu", name: "Mangga Indramayu", origin: "Lokal", desc: "Mangga Indramayu dengan daging buah tebal.",
+    image: "/images/fruits/mangga.png", accent: "from-leaf-300/70 to-emerald-400/70",
+  },
+  {
+    id: "mangga-kiojay", name: "Mangga Kiojay", origin: "Lokal", desc: "Mangga Kiojay dengan ukuran besar dan rasa manis.",
+    image: "/images/fruits/mangga.png", accent: "from-leaf-300/70 to-emerald-400/70",
+  },
+  {
+    id: "mangga-manalagi", name: "Mangga Manalagi", origin: "Lokal", desc: "Mangga Manalagi dengan rasa manis dan aroma khas.",
+    image: "/images/fruits/mangga.png", accent: "from-leaf-300/70 to-emerald-400/70",
+  },
+  {
+    id: "strawberry-lokal", name: "Strawberry", origin: "Lokal", desc: "Strawberry segar dengan perpaduan rasa manis dan asam.",
+    image: "/images/fruits/anggur.png", accent: "from-leaf-300/70 to-emerald-400/70",
+  },
+  {
+    id: "pear-golden", name: "Pear Golden", origin: "Impor", desc: "Pir Golden dengan rasa manis dan tekstur renyah.",
+    image: "/images/fruits/apel.png", accent: "from-rose-300/70 to-orange-400/70",
+  },
+  {
+    id: "pear-singo", name: "Pear Singo", origin: "Impor", desc: "Pir Singo dengan tekstur renyah dan rasa segar.",
+    image: "/images/fruits/apel.png", accent: "from-rose-300/70 to-orange-400/70",
+  },
+  {
+    id: "pear-packham", name: "Pear Packham", origin: "Impor", desc: "Pir Packham dengan daging buah juicy.",
+    image: "/images/fruits/apel.png", accent: "from-rose-300/70 to-orange-400/70",
+  },
+  {
+    id: "sunkist-navel", name: "Sunkist Navel", origin: "Impor", desc: "Jeruk Navel dengan rasa manis dan segar.",
+    image: "/images/fruits/jeruk-impor.png", accent: "from-rose-300/70 to-orange-400/70",
+  },
+  {
+    id: "anggur-hijau", name: "Anggur Hijau", origin: "Impor", desc: "Anggur hijau dengan rasa segar dan manis.",
+    image: "/images/fruits/anggur.png", accent: "from-rose-300/70 to-orange-400/70",
+  },
+  {
+    id: "anggur-hitam", name: "Anggur Hitam", origin: "Impor", desc: "Anggur hitam dengan rasa manis yang khas.",
+    image: "/images/fruits/anggur.png", accent: "from-rose-300/70 to-orange-400/70",
+  },
+  {
+    id: "anggur-merah", name: "Anggur Merah", origin: "Impor", desc: "Anggur merah dengan rasa manis dan segar.",
+    image: "/images/fruits/anggur.png", accent: "from-rose-300/70 to-orange-400/70",
+  },
+  {
+    id: "delima", name: "Delima", origin: "Impor", desc: "Delima dengan butiran buah segar dan warna menarik.",
+    image: "/images/fruits/manggis.png", accent: "from-rose-300/70 to-orange-400/70",
+  },
+  {
+    id: "strawberry-impor", name: "Strawberry Impor", origin: "Impor", desc: "Strawberry impor dengan warna merah cerah dan rasa segar.",
+    image: "/images/fruits/anggur.png", accent: "from-rose-300/70 to-orange-400/70",
+  },
+  {
+    id: "plum", name: "Plum", origin: "Impor", desc: "Plum dengan rasa manis-asam dan daging buah juicy.",
+    image: "/images/fruits/apel.png", accent: "from-rose-300/70 to-orange-400/70",
+  }
+
 ];
