@@ -67,20 +67,7 @@ function FruitCard({ p, index }: { p: FruitProduct; index: number }) {
         <p className="mt-1 line-clamp-2 min-h-8 text-xs leading-relaxed text-leaf-900/55">
           {p.desc}
         </p>
-        <div className="mt-3 flex items-center justify-between border-t border-cream-200 pt-3">
-          <span className="text-[10px] font-extrabold uppercase tracking-[0.14em] text-leaf-900/40">
-            Harga harian
-          </span>
-          <a
-            href={waLink(orderMessage(p.name))}
-            target="_blank"
-            rel="noreferrer"
-            aria-label={`Tanya harga ${p.name}`}
-            className="grid h-9 w-9 place-items-center rounded-full bg-cream-100 text-leaf-700 transition-all duration-300 hover:bg-leaf-600 hover:text-white"
-          >
-            <MessageCircle className="h-4 w-4" />
-          </a>
-        </div>
+        <div className="mt-3 flex items-center justify-end border-t border-cream-200 pt-3"><a href={waLink(orderMessage(p.name))} target="_blank" rel="noreferrer" aria-label={`Tanyakan ketersediaan ${p.name}`} className="inline-flex items-center gap-2 rounded-full bg-cream-100 px-3 py-2 text-xs font-bold text-leaf-700 transition-all hover:bg-leaf-600 hover:text-white"><MessageCircle className="h-4 w-4" /> Tanya produk</a></div>
       </div>
     </motion.div>
   );
