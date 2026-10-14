@@ -114,16 +114,16 @@ const fruitDescription = "Pilihan buah segar, dipilih sesuai ketersediaan dan mu
 
 export const fruitProducts: FruitProduct[] = [
   /* ---------------------------- Buah Lokal ---------------------------- */
-  { id: "pepaya", name: "Pepaya", origin: "Lokal", desc: fruitDescription, image: "/images/fruits/melon.png", accent: "from-orange-300/70 to-rose-300/70" },
+  { id: "pepaya", name: "Pepaya", origin: "Lokal", desc: fruitDescription, image: "https://images.unsplash.com/photo-1619535962037-feb40b6823fd?auto=format&fit=crop&w=700&h=700&q=80", accent: "from-orange-300/70 to-rose-300/70" },
   { id: "pamelo", name: "Pamelo", origin: "Lokal", desc: fruitDescription, image: "/images/fruits/jeruk-siam.png", accent: "from-lime-300/70 to-yellow-400/70" },
   { id: "duku", name: "Duku", origin: "Lokal", desc: fruitDescription, image: "/images/fruits/lengkeng.png", accent: "from-yellow-200/80 to-amber-300/70" },
-  { id: "rambutan", name: "Rambutan", origin: "Lokal", desc: fruitDescription, image: "/images/fruits/manggis.png", accent: "from-rose-300/70 to-red-400/60" },
-  { id: "alpukat", name: "Alpukat", origin: "Lokal", desc: fruitDescription, image: "/images/fruits/mangga.png", accent: "from-leaf-300/70 to-emerald-400/70" },
+  { id: "rambutan", name: "Rambutan", origin: "Lokal", desc: fruitDescription, image: "https://images.unsplash.com/photo-1519097000072-e44ffa116485?auto=format&fit=crop&w=700&h=700&q=80", accent: "from-rose-300/70 to-red-400/60" },
+  { id: "alpukat", name: "Alpukat", origin: "Lokal", desc: fruitDescription, image: "https://images.unsplash.com/photo-1704960961278-a0376a031054?auto=format&fit=crop&w=700&h=700&q=80", accent: "from-leaf-300/70 to-emerald-400/70" },
   { id: "mangga-harummanis", name: "Mangga Harummanis", origin: "Lokal", desc: fruitDescription, image: "/images/fruits/mangga.png", accent: "from-amber-300/70 to-orange-400/70" },
   { id: "mangga-indramayu", name: "Mangga Indramayu", origin: "Lokal", desc: fruitDescription, image: "/images/fruits/mangga.png", accent: "from-amber-300/70 to-orange-400/70" },
   { id: "mangga-kiojay", name: "Mangga Kiojay", origin: "Lokal", desc: fruitDescription, image: "/images/fruits/mangga.png", accent: "from-amber-300/70 to-orange-400/70" },
   { id: "mangga-manlagi", name: "Mangga Manalagi", origin: "Lokal", desc: fruitDescription, image: "/images/fruits/mangga.png", accent: "from-amber-300/70 to-orange-400/70" },
-  { id: "strawberry", name: "Strawberry", origin: "Lokal", desc: fruitDescription, image: "/images/fruits/semangka.png", accent: "from-rose-300/70 to-red-400/60" },
+  { id: "strawberry", name: "Strawberry", origin: "Lokal", desc: fruitDescription, image: "https://images.unsplash.com/photo-1685130050521-821d122f4915?auto=format&fit=crop&w=700&h=700&q=80", accent: "from-rose-300/70 to-red-400/60" },
 
   /* ---------------------------- Buah Impor ---------------------------- */
   { id: "pear-golden", name: "Pear Golden", origin: "Impor", desc: fruitDescription, image: "/images/fruits/apel.png", accent: "from-yellow-200/80 to-amber-300/70" },
@@ -133,7 +133,7 @@ export const fruitProducts: FruitProduct[] = [
   { id: "anggur-hijau", name: "Anggur Hijau", origin: "Impor", desc: fruitDescription, image: "/images/fruits/anggur.png", accent: "from-lime-300/70 to-emerald-300/60" },
   { id: "anggur-hitam", name: "Anggur Hitam", origin: "Impor", desc: fruitDescription, image: "/images/fruits/anggur.png", accent: "from-purple-300/60 to-fuchsia-400/60" },
   { id: "anggur-merah", name: "Anggur Merah", origin: "Impor", desc: fruitDescription, image: "/images/fruits/anggur.png", accent: "from-purple-300/60 to-rose-400/60" },
-  { id: "delima", name: "Delima", origin: "Impor", desc: fruitDescription, image: "/images/fruits/apel.png", accent: "from-rose-300/70 to-red-400/60" },
-  { id: "strawberry-impor", name: "Strawberry Impor", origin: "Impor", desc: fruitDescription, image: "/images/fruits/semangka.png", accent: "from-rose-300/70 to-red-400/60" },
+  { id: "delima", name: "Delima", origin: "Impor", desc: fruitDescription, image: "https://images.unsplash.com/photo-1638838373631-7818d08fc42c?auto=format&fit=crop&w=700&h=700&q=80", accent: "from-rose-300/70 to-red-400/60" },
+  { id: "strawberry-impor", name: "Strawberry Impor", origin: "Impor", desc: fruitDescription, image: "https://images.unsplash.com/photo-1685130050521-821d122f4915?auto=format&fit=crop&w=700&h=700&q=80", accent: "from-rose-300/70 to-red-400/60" },
   { id: "plum", name: "Plum", origin: "Impor", desc: fruitDescription, image: "/images/fruits/apel.png", accent: "from-purple-300/60 to-fuchsia-400/60" },
 ];
