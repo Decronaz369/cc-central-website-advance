@@ -119,7 +119,7 @@ export default function DurianShowcase() {
           tone="gold"
           eyebrow="Portofolio Durian"
           title={<>Aneka <em className="bg-linear-to-r from-gold-500 to-gold-600 bg-clip-text italic text-transparent">durian.</em></>}
-          desc="Portofolio durian mencakup pilihan buah utuh, varian premium, produk beku, dan olahan durian. Hubungi tim DC Central untuk informasi ketersediaan terbaru."
+          desc="Portofolio durian mencakup pilihan buah utuh, varian premium, dan produk beku. Hubungi tim DC Central untuk informasi ketersediaan terbaru."
         />
 
         {/* ---------------- featured Monthong spotlight ---------------- */}
