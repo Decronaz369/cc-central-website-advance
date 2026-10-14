@@ -3,9 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import {
   Crown,
   MessageCircle,
-  Scale,
   ShieldCheck,
-  Snowflake,
 } from "lucide-react";
 import {
   durianProducts,
@@ -31,7 +29,6 @@ const filters: ("Semua" | DurianCategory)[] = [
   "Buah Utuh",
   "Frozen",
   "Premium",
-  "Olahan",
 ];
 
 /* ------------------------------ product card ------------------------------ */
@@ -74,22 +71,15 @@ function DurianCard({ p, index }: { p: DurianProduct; index: number }) {
         <p className="mt-1.5 line-clamp-2 text-[13px] leading-relaxed text-leaf-900/60">
           {p.desc}
         </p>
-        <div className="mt-4 flex items-end justify-between gap-3">
-          <div>
-            <p className="text-[16px] font-extrabold text-leaf-800">
-              {p.priceLabel}
-            </p>
-            {p.priceNote && (
-              <p className="mt-0.5 text-[11px] font-medium text-leaf-900/50">
-                {p.priceNote}
-              </p>
-            )}
-          </div>
+        <div className="mt-4 flex items-center justify-between gap-3 border-t border-cream-200 pt-4">
+          <span className="text-[10px] font-extrabold uppercase tracking-[0.12em] text-leaf-900/45">
+            Tanya ketersediaan
+          </span>
           <a
             href={waLink(orderMessage(p.name))}
             target="_blank"
             rel="noreferrer"
-            aria-label={`Pesan ${p.name} via WhatsApp`}
+            aria-label={`Tanya ketersediaan ${p.name} via WhatsApp`}
             className="grid h-11 w-11 shrink-0 place-items-center rounded-full border border-leaf-300/70 text-leaf-700 transition-all duration-300 hover:border-leaf-600 hover:bg-leaf-600 hover:text-white hover:shadow-glow"
           >
             <MessageCircle className="h-4.5 w-4.5" />
@@ -128,14 +118,7 @@ export default function DurianShowcase() {
         <SectionHeader
           tone="gold"
           eyebrow="Portofolio Durian"
-          title={
-            <>
-              Aneka durian dan{" "}
-              <em className="bg-linear-to-r from-gold-500 to-gold-600 bg-clip-text italic text-transparent">
-                produk turunannya.
-              </em>
-            </>
-          }
+          title={<>Aneka <em className="bg-linear-to-r from-gold-500 to-gold-600 bg-clip-text italic text-transparent">durian.</em></>}
           desc="Portofolio durian mencakup pilihan buah utuh, varian premium, produk beku, dan olahan durian. Hubungi tim DC Central untuk informasi ketersediaan terbaru."
         />
 
@@ -197,32 +180,6 @@ export default function DurianShowcase() {
                     </span>
                   </div>
                 ))}
-              </div>
-
-              {/* price options */}
-              <div className="mt-8 grid gap-3 sm:grid-cols-2">
-                <div className="rounded-2xl border border-gold-300/70 bg-gold-50 p-4">
-                  <p className="flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-wide text-leaf-900/55">
-                    <Scale className="h-3.5 w-3.5" />
-                    Buah Utuh Ditimbang
-                  </p>
-                  <p className="font-display mt-1.5 text-2xl font-bold text-leaf-950">
-                    Rp79.900
-                    <span className="text-sm font-semibold text-leaf-900/50">
-                      {" "}
-                      /kg
-                    </span>
-                  </p>
-                </div>
-                <div className="rounded-2xl border border-leaf-300/50 bg-leaf-50 p-4">
-                  <p className="flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-wide text-leaf-900/55">
-                    <Snowflake className="h-3.5 w-3.5" />
-                    Frozen Premium Box 500g
-                  </p>
-                  <p className="font-display mt-1.5 text-2xl font-bold text-leaf-950">
-                    Rp85.000
-                  </p>
-                </div>
               </div>
 
               {/* cta */}
