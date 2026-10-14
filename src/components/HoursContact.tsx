@@ -110,13 +110,13 @@ export default function HoursContact() {
                 </div>
 
                 <a
-                  href="https://instagram.com/duriancastle.id"
+                  href="https://instagram.com/dccentrall"
                   target="_blank"
                   rel="noreferrer"
                   className="mt-5 inline-flex w-fit items-center gap-2.5 rounded-full border border-pink-300/60 bg-pink-50 px-5 py-2.5 text-xs font-extrabold text-pink-600 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-card"
                 >
                   <AtSign className="h-4 w-4" />
-                  @duriancastle.id
+                  @dccentrall
                 </a>
               </div>
             </div>
