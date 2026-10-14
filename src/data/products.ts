@@ -106,14 +106,6 @@ export interface FruitProduct {
 export const fruitProducts: FruitProduct[] = [
   /* ---------------------------- Buah Lokal ---------------------------- */
   {
-    id: "mangga",
-    name: "Mangga",
-    origin: "Lokal",
-    desc: "Manis legit, daging tebal dan juicy.",
-    image: "/images/fruits/mangga.png",
-    accent: "from-amber-300/70 to-orange-400/70",
-  },
-  {
     id: "jeruk-siam",
     name: "Jeruk Siam",
     origin: "Lokal",
@@ -219,10 +211,10 @@ export const fruitProducts: FruitProduct[] = [
   },
   {
     id: "mangga-harummanis",
-    name: "Mangga Harummanis",
+    name: "Mangga Harum Manis",
     origin: "Lokal",
     desc: "Aroma harum khas dengan daging manis dan lembut.",
-    image: "/images/fruits/mangga.png",
+    image: "/images/fruits/mangga-harum-manis.jpg",
     accent: "from-leaf-200/70 to-gold-300/60",
   },
   {
@@ -230,7 +222,7 @@ export const fruitProducts: FruitProduct[] = [
     name: "Mangga Indramayu",
     origin: "Lokal",
     desc: "Pilihan mangga lokal untuk rujak atau dinikmati saat matang.",
-    image: "/images/fruits/mangga.png",
+    image: "/images/fruits/mangga-indramayu.jpg",
     accent: "from-leaf-200/70 to-gold-300/60",
   },
   {
@@ -238,7 +230,7 @@ export const fruitProducts: FruitProduct[] = [
     name: "Mangga Kiojay",
     origin: "Lokal",
     desc: "Mangga berukuran besar dengan daging tebal.",
-    image: "/images/fruits/mangga.png",
+    image: "/images/fruits/mangga-kiojay.jpg",
     accent: "from-leaf-200/70 to-gold-300/60",
   },
   {
@@ -246,7 +238,7 @@ export const fruitProducts: FruitProduct[] = [
     name: "Mangga Manalagi",
     origin: "Lokal",
     desc: "Rasa manis khas dengan tekstur daging yang padat.",
-    image: "/images/fruits/mangga.png",
+    image: "/images/fruits/mangga-manalagi.jpg",
     accent: "from-leaf-200/70 to-gold-300/60",
   },
   {
@@ -262,7 +254,7 @@ export const fruitProducts: FruitProduct[] = [
     name: "Pear Golden",
     origin: "Impor",
     desc: "Pear berkulit keemasan dengan daging renyah dan berair.",
-    image: "/images/fruits/pear.jpg",
+    image: "/images/fruits/pear-golden.jpg",
     accent: "from-sky-200/70 to-leaf-300/60",
   },
   {
@@ -270,7 +262,7 @@ export const fruitProducts: FruitProduct[] = [
     name: "Pear Singo",
     origin: "Impor",
     desc: "Pear bulat dengan rasa manis ringan dan banyak air.",
-    image: "/images/fruits/pear.jpg",
+    image: "/images/fruits/pear-singo.jpg",
     accent: "from-sky-200/70 to-leaf-300/60",
   },
   {
@@ -278,7 +270,7 @@ export const fruitProducts: FruitProduct[] = [
     name: "Pear Packkam",
     origin: "Impor",
     desc: "Pear hijau dengan aroma lembut dan rasa manis saat matang.",
-    image: "/images/fruits/pear.jpg",
+    image: "/images/fruits/pear-packkam.jpg",
     accent: "from-sky-200/70 to-leaf-300/60",
   },
   {
@@ -294,7 +286,7 @@ export const fruitProducts: FruitProduct[] = [
     name: "Sunkist Navel",
     origin: "Impor",
     desc: "Jeruk navel dengan aroma citrus dan rasa segar.",
-    image: "/images/fruits/jeruk-impor.png",
+    image: "/images/fruits/sunkist-navel.jpg",
     accent: "from-sky-200/70 to-leaf-300/60",
   },
   {
@@ -326,7 +318,7 @@ export const fruitProducts: FruitProduct[] = [
     name: "Delima",
     origin: "Impor",
     desc: "Bulir merah dengan rasa manis-asam yang menyegarkan.",
-    image: "/images/fruits/delima.svg",
+    image: "/images/fruits/delima.jpg",
     accent: "from-sky-200/70 to-leaf-300/60",
   },
   {
@@ -334,7 +326,7 @@ export const fruitProducts: FruitProduct[] = [
     name: "Strawberry Impor",
     origin: "Impor",
     desc: "Pilihan strawberry impor untuk sajian segar dan dessert.",
-    image: "/images/fruits/strawberry.jpg",
+    image: "/images/fruits/strawberry-impor.jpg",
     accent: "from-sky-200/70 to-leaf-300/60",
   },
   {
@@ -342,7 +334,7 @@ export const fruitProducts: FruitProduct[] = [
     name: "Plum",
     origin: "Impor",
     desc: "Daging juicy dengan perpaduan rasa manis dan asam.",
-    image: "/images/fruits/plum.svg",
+    image: "/images/fruits/plum.jpg",
     accent: "from-sky-200/70 to-leaf-300/60",
   },
 ];

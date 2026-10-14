@@ -68,7 +68,7 @@ export default function DurianHero() {
       {/* mixed-fruit arrangement */}
       <div className="absolute inset-0 flex items-center justify-center">
         <motion.img
-          src="/images/fruit-hero.webp"
+          src="/Durian.png"
           alt="Aneka buah DC Central: nanas, durian, mangga, anggur, jeruk, apel, alpukat, dan strawberry"
           draggable={false}
           fetchPriority="high"
@@ -80,7 +80,7 @@ export default function DurianHero() {
               : { y: [0, -22, 0], rotate: [-1.5, 1.5, -1.5] }
           }
           transition={BOB}
-          className="relative z-1 h-[88%] w-[96%] object-contain select-none drop-shadow-[0_28px_28px_rgba(90,68,22,0.28)]"
+          className="relative z-1 h-[76%] w-auto object-contain select-none drop-shadow-[0_28px_28px_rgba(90,68,22,0.28)]"
         />
       </div>
 
