@@ -42,7 +42,7 @@ export default function CorporateServices() {
               <>
                 Dari distribusi hingga{" "}
                 <em className="bg-linear-to-r from-gold-500 to-gold-600 bg-clip-text italic text-transparent">
-                  kanal retail.
+                  kanal&nbsp;retail.
                 </em>
               </>
             }
