@@ -246,7 +246,7 @@ export default function Hero() {
                 </div>
               </div>
             </FloatChip>
-            <FloatChip delay={2.2} className="mr-16 top-2 sm:right-3">
+            <FloatChip delay={2.2} className="mr-16 top-2  sm:right-3">
               <div className="flex items-center gap-3 px-3.5 py-3 pr-5">
                 <img
                   src="/images/about-store.png"
