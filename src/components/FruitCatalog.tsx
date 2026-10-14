@@ -69,14 +69,14 @@ function FruitCard({ p, index }: { p: FruitProduct; index: number }) {
         </p>
         <div className="mt-3 flex items-center justify-between border-t border-cream-200 pt-3">
           <span className="text-[10px] font-extrabold uppercase tracking-[0.14em] text-leaf-900/40">
-            Harga harian
+            Tanya stok
           </span>
           <a
             href={waLink(orderMessage(p.name))}
             target="_blank"
             rel="noreferrer"
-            aria-label={`Tanya harga ${p.name}`}
-            className="grid h-9 w-9 place-items-center rounded-full bg-cream-100 text-leaf-700 transition-all duration-300 hover:bg-leaf-600 hover:text-white"
+            aria-label={`Tanya stok ${p.name}`}
+            className="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-cream-100 text-leaf-700 transition-all duration-300 hover:bg-leaf-600 hover:text-white"
           >
             <MessageCircle className="h-4 w-4" />
           </a>
@@ -135,6 +135,7 @@ export default function FruitCatalog() {
               <input
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
+                aria-label="Cari buah"
                 placeholder="Cari mangga, anggur, strawberry…"
                 className="w-full bg-transparent text-sm font-semibold text-leaf-950 outline-none placeholder:text-leaf-900/40"
               />
@@ -236,8 +237,9 @@ export default function FruitCatalog() {
         {/* footnote */}
         <Reveal delay={0.1}>
           <p className="mt-10 text-center text-xs font-semibold text-leaf-900/45">
-            Harga buah mengikuti stok & musim — chat WhatsApp untuk harga paling
-            update hari ini.
+            Ketersediaan buah mengikuti stok & musim — hubungi tim kami melalui
+            WhatsApp untuk informasi terbaru.
+            <span className="mt-2 block">Gambar produk merupakan ilustrasi; tampilan buah dapat berbeda.</span>
           </p>
         </Reveal>
       </div>

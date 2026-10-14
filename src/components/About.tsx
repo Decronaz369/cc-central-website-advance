@@ -29,7 +29,7 @@ export default function About() {
           <SectionHeader align="left" eyebrow="Tentang Perusahaan" title={<>Mengenal <em className="bg-linear-to-r from-gold-500 to-gold-600 bg-clip-text italic text-transparent">Central Buah Segar.</em></>} />
           <Reveal delay={0.2}>
             <p className="mt-6 text-base leading-relaxed text-leaf-900/70"><span className="font-bold text-leaf-950">PT. Central Buah Segar</span> bergerak di bidang distribusi buah lokal dan impor. Kami menghadirkan ragam produk buah untuk menjawab kebutuhan pelanggan melalui pemilihan produk yang cermat dan perhatian pada kesegaran.</p>
-            <p className="mt-4 text-base leading-relaxed text-leaf-900/70"><span className="font-bold text-leaf-950">DC Central</span> menjadi kanal retail perusahaan di kawasan Citra Raya, Tangerang, dengan pilihan buah segar, durian premium, serta produk olahan durian. Melalui profil ini, kami ingin memperkenalkan kegiatan usaha dan ragam produk yang kami hadirkan.</p>
+            <p className="mt-4 text-base leading-relaxed text-leaf-900/70"><span className="font-bold text-leaf-950">DC Central</span> menjadi kanal retail perusahaan di kawasan Citra Raya, Tangerang, dengan pilihan buah segar, durian premium, serta durian beku. Melalui profil ini, kami ingin memperkenalkan kegiatan usaha dan ragam produk yang kami hadirkan.</p>
           </Reveal>
 
           <Reveal delay={0.28}>
@@ -43,7 +43,7 @@ export default function About() {
               <div className="rounded-2xl border border-leaf-100 bg-white/80 p-4 shadow-card">
                 <span className="grid h-10 w-10 place-items-center rounded-xl bg-leaf-100 text-leaf-700"><Leaf className="h-5 w-5" /></span>
                 <p className="mt-3 text-sm font-extrabold text-leaf-950">Fokus Produk</p>
-                <p className="mt-1 text-xs leading-relaxed text-leaf-900/60">Buah lokal, buah impor, durian, dan produk olahannya.</p>
+                <p className="mt-1 text-xs leading-relaxed text-leaf-900/60">Buah lokal, buah impor, durian utuh, dan durian beku.</p>
               </div>
               <div className="rounded-2xl border border-leaf-100 bg-white/80 p-4 shadow-card">
                 <span className="grid h-10 w-10 place-items-center rounded-xl bg-gold-100 text-gold-700"><Store className="h-5 w-5" /></span>

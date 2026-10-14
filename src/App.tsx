@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Marquee from "./components/Marquee";
 import About from "./components/About";
+import OrchardGallery from "./components/OrchardGallery";
 import CompanyDirection from "./components/CompanyDirection";
 import CorporateServices from "./components/CorporateServices";
 import Categories from "./components/Categories";
@@ -29,6 +30,7 @@ export default function App() {
         <Hero />
         <Marquee />
         <About />
+        <OrchardGallery />
         <CompanyDirection />
         <CorporateServices />
         <Categories />

@@ -1,8 +1,13 @@
 export const BRAND = {
   name: "PT. Central Buah Segar",
-  parent: "DC Central · @duriancastle.id",
+  parent: "DC Central · @dccentrall",
   tagline: "Distributor Buah Lokal & Impor",
   area: "Citra Raya, Tangerang",
+};
+
+export const INSTAGRAM = {
+  handle: "@dccentrall",
+  url: "https://www.instagram.com/dccentrall/",
 };
 
 export const WA_NUMBER = "6282253276700";
@@ -12,7 +17,7 @@ export const waLink = (message?: string) =>
   `https://wa.me/${WA_NUMBER}${message ? `?text=${encodeURIComponent(message)}` : ""}`;
 
 export const orderMessage = (item: string) =>
-  `Halo DC Central! Saya ingin memesan *${item}*. Mohon info stok & harga hari ini ya. Terima kasih.`;
+  `Halo DC Central! Saya ingin memesan *${item}*. Mohon info ketersediaan produk hari ini ya. Terima kasih.`;
 
 export const GENERIC_MESSAGE =
   "Halo PT. Central Buah Segar / DC Central. Saya ingin memperoleh informasi mengenai perusahaan, portofolio produk, dan layanan yang tersedia.";

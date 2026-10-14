@@ -1,7 +1,7 @@
 import { motion, useReducedMotion } from "framer-motion";
 
 /**
- * Hero visual: the client's durian photo with a gentle up-and-down bob.
+ * Hero visual: an assortment of local and imported fruits with a gentle bob.
  * Replaces the old WebGL scene — the surrounding decoration (orbiting rings,
  * floating orbs, sparkles and ground shadow) is kept so the look is unchanged.
  */
@@ -57,7 +57,7 @@ export default function DurianHero() {
         </div>
       </div>
 
-      {/* ground shadow — shrinks as the durian rises */}
+      {/* ground shadow — shrinks as the fruit arrangement rises */}
       <motion.div
         aria-hidden
         animate={reduce ? undefined : { scaleX: [1, 0.86, 1], opacity: [0.34, 0.2, 0.34] }}
@@ -65,19 +65,22 @@ export default function DurianHero() {
         className="absolute bottom-[8%] left-1/2 h-[5%] w-[44%] -translate-x-1/2 rounded-[50%] bg-[#5a4416] blur-xl"
       />
 
-      {/* the durian itself */}
+      {/* mixed-fruit arrangement */}
       <div className="absolute inset-0 flex items-center justify-center">
         <motion.img
-          src="/Durian.png"
-          alt="Durian premium DC Central"
+          src="/images/fruit-hero.webp"
+          alt="Aneka buah DC Central: nanas, durian, mangga, anggur, jeruk, apel, alpukat, dan strawberry"
           draggable={false}
+          fetchPriority="high"
+          width={1000}
+          height={558}
           animate={
             reduce
               ? undefined
               : { y: [0, -22, 0], rotate: [-1.5, 1.5, -1.5] }
           }
           transition={BOB}
-          className="relative z-1 h-[76%] w-auto select-none drop-shadow-[0_28px_28px_rgba(90,68,22,0.28)]"
+          className="relative z-1 h-[88%] w-[96%] object-contain select-none drop-shadow-[0_28px_28px_rgba(90,68,22,0.28)]"
         />
       </div>
 

@@ -101,7 +101,7 @@ export default function Hero() {
             <span className="rounded-full bg-leaf-600 px-2.5 py-1 text-[10px] uppercase tracking-[0.14em] text-white">
               Baru
             </span>
-            Bagian dari @duriancastle.id · Citra Raya, Tangerang
+            Bagian dari @dccentrall · Citra Raya, Tangerang
           </motion.div>
 
           <h1 className="font-display mt-6 text-[13.5vw] font-semibold leading-[1.02] tracking-tight text-leaf-950 sm:text-6xl lg:text-[4.6rem]">
@@ -274,7 +274,7 @@ export default function Hero() {
                     Monthong Palu
                   </p>
                   <p className="text-[11px] font-extrabold text-gold-600">
-                    Rp79.900/kg
+                    Pilihan premium
                   </p>
                 </div>
               </div>
