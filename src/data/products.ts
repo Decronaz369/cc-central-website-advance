@@ -207,7 +207,7 @@ export const fruitProducts: FruitProduct[] = [
     desc: "Jeruk premium impor: manis, juicy, mudah dikupas.",
     image: "/images/fruits/jeruk-impor.png",
     accent: "from-orange-300/70 to-amber-400/70",
-  },,
+  },
   {
     id: "pepaya", name: "Pepaya", origin: "Lokal", desc: "Pepaya matang dengan rasa manis dan tekstur lembut.",
     image: "/images/fruits/melon.png", accent: "from-leaf-300/70 to-emerald-400/70",
