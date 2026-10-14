@@ -61,7 +61,7 @@ export default function Delivery() {
                   <Truck className="h-7 w-7" />
                 </span>
                 <span className="rounded-full bg-gold-400 px-4 py-1.5 text-[11px] font-extrabold uppercase tracking-[0.14em] text-leaf-950 shadow-glow">
-                  Rp0 · Gratis
+                  Gratis
                 </span>
               </div>
               <h3 className="font-display relative mt-7 text-2xl font-bold sm:text-3xl">

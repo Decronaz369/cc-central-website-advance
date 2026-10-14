@@ -11,7 +11,7 @@ const commitments = [
   {
     icon: Target,
     title: "Menyediakan Pilihan",
-    text: "Menghadirkan pilihan buah lokal, buah impor, durian premium, dan produk olahan dalam satu portofolio.",
+    text: "Menghadirkan pilihan buah lokal, buah impor, durian premium, dan durian beku dalam satu portofolio.",
     tone: "from-gold-400 to-gold-600",
   },
   {
