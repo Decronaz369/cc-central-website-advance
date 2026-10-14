@@ -1,10 +1,6 @@
 import { motion, useReducedMotion } from "framer-motion";
 
-/**
- * Hero visual: the client's durian photo with a gentle up-and-down bob.
- * Replaces the old WebGL scene — the surrounding decoration (orbiting rings,
- * floating orbs, sparkles and ground shadow) is kept so the look is unchanged.
- */
+/** Animated collage of fruit imagery for the DC Central hero. */
 
 const BOB = {
   duration: 3.6,
@@ -65,20 +61,13 @@ export default function DurianHero() {
         className="absolute bottom-[8%] left-1/2 h-[5%] w-[44%] -translate-x-1/2 rounded-[50%] bg-[#5a4416] blur-xl"
       />
 
-      {/* the durian itself */}
-      <div className="absolute inset-0 flex items-center justify-center">
-        <motion.img
-          src="/Durian.png"
-          alt="Durian premium DC Central"
-          draggable={false}
-          animate={
-            reduce
-              ? undefined
-              : { y: [0, -22, 0], rotate: [-1.5, 1.5, -1.5] }
-          }
-          transition={BOB}
-          className="relative z-1 h-[76%] w-auto select-none drop-shadow-[0_28px_28px_rgba(90,68,22,0.28)]"
-        />
+      {/* assorted fruit collage */}
+      <div className="absolute inset-[8%]">
+        <motion.img src="/images/fruits/mangga.png" alt="Mangga segar" draggable={false} animate={reduce ? undefined : { y: [0, -12, 0], rotate: [-7, -3, -7] }} transition={BOB} className="absolute left-[7%] top-[22%] z-10 h-[37%] w-[38%] rounded-[2rem] object-cover shadow-[0_22px_32px_rgba(42,64,33,0.25)]" />
+        <motion.img src="/images/fruits/jeruk-impor.png" alt="Jeruk segar" draggable={false} animate={reduce ? undefined : { y: [0, 13, 0], rotate: [6, 2, 6] }} transition={{...BOB, delay: 0.35}} className="absolute right-[7%] top-[12%] z-20 h-[36%] w-[37%] rounded-[2rem] object-cover shadow-[0_22px_32px_rgba(42,64,33,0.25)]" />
+        <motion.img src="/images/durian-monthong.png" alt="Durian premium" draggable={false} animate={reduce ? undefined : { y: [0, -16, 0], rotate: [2, -2, 2] }} transition={{...BOB, delay: 0.2}} className="absolute left-[27%] top-[34%] z-30 h-[42%] w-[45%] rounded-[2rem] object-cover shadow-[0_28px_35px_rgba(42,64,33,0.3)]" />
+        <motion.img src="/images/fruits/anggur.png" alt="Anggur segar" draggable={false} animate={reduce ? undefined : { y: [0, 10, 0], rotate: [-5, 0, -5] }} transition={{...BOB, delay: 0.5}} className="absolute bottom-[5%] left-[6%] z-20 h-[29%] w-[34%] rounded-[1.7rem] object-cover shadow-[0_22px_32px_rgba(42,64,33,0.25)]" />
+        <motion.img src="/images/fruits/semangka.png" alt="Semangka segar" draggable={false} animate={reduce ? undefined : { y: [0, -9, 0], rotate: [5, 1, 5] }} transition={{...BOB, delay: 0.4}} className="absolute bottom-[1%] right-[5%] z-20 h-[30%] w-[33%] rounded-[1.7rem] object-cover shadow-[0_22px_32px_rgba(42,64,33,0.25)]" />
       </div>
 
       {/* floating orbs */}
