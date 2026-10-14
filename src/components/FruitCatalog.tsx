@@ -223,8 +223,7 @@ export default function FruitCatalog() {
         {/* footnote */}
         <Reveal delay={0.1}>
           <p className="mt-10 text-center text-xs font-semibold text-leaf-900/45">
-            Harga buah mengikuti stok & musim — chat WhatsApp untuk harga paling
-            update hari ini.
+            Ketersediaan buah mengikuti stok dan musim. Hubungi tim kami untuk informasi produk terbaru.
           </p>
         </Reveal>
       </div>
