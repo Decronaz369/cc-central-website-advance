@@ -145,7 +145,7 @@ export default function FruitCatalog() {
                 <button
                   key={f}
                   onClick={() => setOrigin(f)}
-                  className={`relative rounded-full px-5 py-2 text-xs font-bold transition-colors duration-300 ${
+                  className={`relative cursor-pointer rounded-full px-5 py-2 text-xs font-bold transition-colors duration-300 ${
                     origin === f
                       ? "text-white"
                       : "bg-white text-leaf-900/60 shadow-card hover:text-leaf-800"
@@ -226,7 +226,7 @@ export default function FruitCatalog() {
                   setQuery("");
                   setOrigin("Semua");
                 }}
-                className="mt-5 rounded-full bg-leaf-600 px-6 py-2.5 text-xs font-bold text-white transition-transform hover:scale-105"
+                className="mt-5 cursor-pointer rounded-full bg-leaf-600 px-6 py-2.5 text-xs font-bold text-white transition-transform hover:scale-105"
               >
                 Reset Pencarian
               </button>
@@ -239,7 +239,9 @@ export default function FruitCatalog() {
           <p className="mt-10 text-center text-xs font-semibold text-leaf-900/45">
             Ketersediaan buah mengikuti stok & musim — hubungi tim kami melalui
             WhatsApp untuk informasi terbaru.
-            <span className="mt-2 block">Gambar produk merupakan ilustrasi; tampilan buah dapat berbeda.</span>
+            <span className="mt-2 block">
+              Gambar produk merupakan ilustrasi; tampilan buah dapat berbeda.
+            </span>
           </p>
         </Reveal>
       </div>

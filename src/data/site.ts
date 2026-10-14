@@ -6,7 +6,7 @@ export const BRAND = {
 };
 
 export const INSTAGRAM = {
-  handle: "@dccentrall",
+  handle: "dccentrall",
   url: "https://www.instagram.com/dccentrall/",
 };
 

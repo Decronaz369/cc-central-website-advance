@@ -102,7 +102,7 @@ export default function LocationSection() {
                 </a>
                 <button
                   onClick={copyAddress}
-                  className="inline-flex items-center gap-2 rounded-full border border-leaf-300/70 bg-white px-6 py-3.5 text-sm font-bold text-leaf-800 transition-all duration-300 hover:bg-leaf-50"
+                  className="inline-flex cursor-pointer items-center gap-2 rounded-full border border-leaf-300/70 bg-white px-6 py-3.5 text-sm font-bold text-leaf-800 transition-all duration-300 hover:bg-leaf-50"
                 >
                   {copied ? (
                     <Check className="h-4.5 w-4.5 text-leaf-600" />

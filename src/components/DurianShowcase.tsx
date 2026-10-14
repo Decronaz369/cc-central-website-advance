@@ -120,7 +120,7 @@ export default function DurianShowcase() {
             <>
               Aneka{" "}
               <em className="bg-linear-to-r from-gold-500 to-gold-600 bg-clip-text italic text-transparent">
-                durian.
+                Durian
               </em>
             </>
           }
@@ -200,7 +200,7 @@ export default function DurianShowcase() {
                 </a>
                 <button
                   onClick={() => scrollToId("#garansi")}
-                  className="group text-sm font-bold text-leaf-800 underline decoration-gold-400 decoration-2 underline-offset-4 transition-colors hover:text-gold-700"
+                  className="group cursor-pointer text-sm font-bold text-leaf-800 underline decoration-gold-400 decoration-2 underline-offset-4 transition-colors hover:text-gold-700"
                 >
                   Lihat jaminan kami{" "}
                   <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">
@@ -221,7 +221,7 @@ export default function DurianShowcase() {
             <button
               key={f}
               onClick={() => setActive(f)}
-              className={`relative rounded-full px-5 py-2.5 text-[13px] font-bold transition-colors duration-300 ${
+              className={`relative cursor-pointer rounded-full px-5 py-2.5 text-[13px] font-bold transition-colors duration-300 ${
                 active === f
                   ? "text-white"
                   : "bg-white text-leaf-900/60 shadow-card hover:text-leaf-800"
@@ -251,7 +251,8 @@ export default function DurianShowcase() {
           </AnimatePresence>
         </motion.div>
         <p className="mt-8 text-center text-xs leading-relaxed text-leaf-900/50">
-          Gambar produk merupakan ilustrasi; tampilan buah dan kemasan dapat berbeda.
+          Gambar produk merupakan ilustrasi; tampilan buah dan kemasan dapat
+          berbeda.
         </p>
       </div>
     </section>

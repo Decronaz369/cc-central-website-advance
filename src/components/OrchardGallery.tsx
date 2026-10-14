@@ -31,7 +31,7 @@ export default function OrchardGallery() {
         <div className="mt-12 grid gap-6 md:grid-cols-2">
           {scenes.map((scene, index) => (
             <Reveal key={scene.image} delay={index * 0.12}>
-              <figure className="group overflow-hidden rounded-[2rem] bg-white shadow-card">
+              <figure className="group overflow-hidden rounded-4xl bg-white shadow-card">
                 <div className="aspect-3/2 overflow-hidden">
                   <img
                     src={scene.image}

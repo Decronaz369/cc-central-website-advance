@@ -60,7 +60,7 @@ export default function Navbar() {
           {/* logo */}
           <button
             onClick={() => go("#home")}
-            className="group flex items-center gap-3"
+            className="group cursor-pointer flex items-center gap-3"
             aria-label={BRAND.name}
           >
             <img
@@ -84,7 +84,7 @@ export default function Navbar() {
               <button
                 key={l.id}
                 onClick={() => go(`#${l.id}`)}
-                className="nav-link text-[13.5px] font-semibold text-leaf-950/75"
+                className="nav-link cursor-pointer text-[13.5px] font-semibold text-leaf-950/75"
               >
                 {l.label}
               </button>
@@ -104,7 +104,7 @@ export default function Navbar() {
             <button
               onClick={() => setOpen(true)}
               aria-label="Buka menu"
-              className="glass grid h-11 w-11 place-items-center rounded-2xl text-leaf-900 lg:hidden"
+              className="glass cursor-pointer grid h-11 w-11 place-items-center rounded-2xl text-leaf-900 lg:hidden"
             >
               <Menu className="h-5 w-5" />
             </button>
@@ -142,8 +142,7 @@ export default function Navbar() {
                     src="/Logo.jpg"
                     alt="Logo DC Central"
                     className="h-10 w-10 rounded-xl"
-                  >
-                  </img>
+                  ></img>
                   <span className="font-display text-lg font-bold">
                     PT. Central Buah Segar
                   </span>
@@ -151,7 +150,7 @@ export default function Navbar() {
                 <button
                   onClick={() => setOpen(false)}
                   aria-label="Tutup menu"
-                  className="glass grid h-10 w-10 place-items-center rounded-xl text-leaf-900"
+                  className="glass cursor-pointer grid h-10 w-10 place-items-center rounded-xl text-leaf-900"
                 >
                   <X className="h-5 w-5" />
                 </button>
