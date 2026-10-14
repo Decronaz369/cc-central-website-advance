@@ -13,10 +13,6 @@ export interface DurianProduct {
   image: string;
   badge?: { label: string; tone: BadgeTone };
   category: DurianCategory;
-  priceLabel: string;
-  priceNote?: string;
-  /** Extended info used by the featured spotlight card */
-  prices?: { label: string; value: string }[];
   taste?: { label: string; value: number }[];
 }
 
@@ -28,12 +24,6 @@ export const durianProducts: DurianProduct[] = [
     image: "/images/durian-monthong.png",
     badge: { label: "Best Seller", tone: "gold" },
     category: "Buah Utuh",
-    priceLabel: "Rp79.900",
-    priceNote: "per kg · buah utuh ditimbang",
-    prices: [
-      { label: "Buah Utuh Ditimbang", value: "Rp79.900/kg" },
-      { label: "Frozen Premium Box 500g", value: "Rp85.000" },
-    ],
     taste: [
       { label: "Manis", value: 92 },
       { label: "Creamy", value: 96 },
@@ -47,8 +37,6 @@ export const durianProducts: DurianProduct[] = [
     image: "/images/durian-frozen-box.png",
     badge: { label: "Frozen", tone: "sky" },
     category: "Frozen",
-    priceLabel: "Rp85.000",
-    priceNote: "per box · isi 500 gram",
   },
   {
     id: "musang-king",
@@ -57,8 +45,6 @@ export const durianProducts: DurianProduct[] = [
     image: "/images/musang-king.png",
     badge: { label: "Premium", tone: "green" },
     category: "Premium",
-    priceLabel: "Tanya Hari Ini",
-    priceNote: "stok premium musiman",
   },
   {
     id: "blackthorn",
@@ -67,8 +53,6 @@ export const durianProducts: DurianProduct[] = [
     image: "/images/blackthorn.png",
     badge: { label: "Rare", tone: "pink" },
     category: "Premium",
-    priceLabel: "Tanya Hari Ini",
-    priceNote: "stok sangat terbatas",
   },
   {
     id: "montong-parigi",
@@ -76,8 +60,6 @@ export const durianProducts: DurianProduct[] = [
     desc: "Legenda dari Parigi Moutong: daging tebal, legit tanpa pahit, favorit dari penikmat pemula sampai kolektor.",
     image: "/images/monthong-parigi2.png",
     category: "Buah Utuh",
-    priceLabel: "Ditimbang Utuh",
-    priceNote: "harga harian per kg",
   },
   {
     id: "frozen-musangking", name: "Frozen Musang King",
