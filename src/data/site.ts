@@ -1,6 +1,6 @@
 export const BRAND = {
   name: "PT. Central Buah Segar",
-  parent: "DC Central · @duriancastle.id",
+  parent: "DC Central · @dccentrall",
   tagline: "Distributor Buah Lokal & Impor",
   area: "Citra Raya, Tangerang",
 };
