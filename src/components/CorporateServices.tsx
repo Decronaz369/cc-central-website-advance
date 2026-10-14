@@ -39,11 +39,11 @@ export default function CorporateServices() {
 
         <div className="mt-12 grid gap-5 lg:grid-cols-3">
           {services.map((service, index) => <Reveal key={service.number} delay={index * 0.08}>
-            <article className="group relative flex h-full flex-col overflow-hidden rounded-[1.8rem] border border-leaf-100/80 bg-white p-7 shadow-card transition-all duration-500 hover:-translate-y-2 hover:shadow-soft sm:p-8">
+            <article role="link" tabIndex={0} onClick={() => scrollToId("#portofolio")} onKeyDown={(event) => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); scrollToId("#portofolio"); } }} aria-label={`Lihat portofolio: ${service.title}`} className="group relative flex h-full cursor-pointer flex-col overflow-hidden rounded-[1.8rem] border border-leaf-100/80 bg-white p-7 shadow-card transition-all duration-500 hover:-translate-y-2 hover:shadow-soft focus-visible:outline-2 focus-visible:outline-leaf-600 sm:p-8">
               <div className="flex items-start justify-between"><span className={`grid h-13 w-13 place-items-center rounded-2xl ${service.color}`}><service.icon className="h-6 w-6" /></span><span className="font-display text-4xl font-bold text-leaf-950/[0.08]">{service.number}</span></div>
               <h3 className="font-display mt-7 text-2xl font-bold leading-tight text-leaf-950">{service.title}</h3>
               <p className="mt-3 flex-1 text-sm leading-relaxed text-leaf-900/65">{service.description}</p>
-              <button onClick={() => scrollToId("#portofolio")} className="mt-7 inline-flex w-fit items-center gap-2 text-xs font-extrabold uppercase tracking-[0.12em] text-leaf-700 transition-colors hover:text-gold-700">Lihat portofolio <ArrowUpRight className="h-4 w-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" /></button>
+              <span className="mt-7 inline-flex w-fit items-center gap-2 text-xs font-extrabold uppercase tracking-[0.12em] text-leaf-700 transition-colors group-hover:text-gold-700">Lihat portofolio <ArrowUpRight className="h-4 w-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" /></span>
               <span className="absolute bottom-0 left-0 h-1 w-0 bg-linear-to-r from-leaf-500 to-gold-400 transition-all duration-500 group-hover:w-full" />
             </article>
           </Reveal>)}
