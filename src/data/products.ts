@@ -65,23 +65,23 @@ export const durianProducts: DurianProduct[] = [
     id: "frozen-musangking", name: "Frozen Musang King",
     desc: "Daging durian Musang King pilihan dalam bentuk beku.",
     image: "/images/durian-frozen-box.png", badge: { label: "Frozen", tone: "sky" },
-    category: "Frozen", priceLabel: "",
+    category: "Frozen",
   },
   {
     id: "frozen-bawor", name: "Frozen Bawor",
     desc: "Pilihan daging durian Bawor beku untuk dinikmati kapan saja.",
-    image: "/images/durian-monthong.png", category: "Frozen", priceLabel: "",
+    image: "/images/durian-monthong.png", category: "Frozen",
   },
   {
     id: "frozen-medan", name: "Frozen Medan",
     desc: "Durian Medan dalam bentuk beku, praktis untuk disimpan.",
-    image: "/images/monthong-parigi2.png", category: "Frozen", priceLabel: "",
+    image: "/images/monthong-parigi2.png", category: "Frozen",
   },
   {
     id: "frozen-blackthorn", name: "Frozen Blackthorn",
     desc: "Varian Blackthorn premium dalam bentuk beku.",
     image: "/images/blackthorn.png", badge: { label: "Frozen", tone: "sky" },
-    category: "Frozen", priceLabel: "",
+    category: "Frozen",
   },
 ];
 
